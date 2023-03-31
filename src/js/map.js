@@ -3,7 +3,20 @@ import { geoEqualEarth, geoPath } from "d3-geo";
 
 export const drawMap = (laureates, countries) => {
 
+  console.log(countries.features.find(c => c.properties.name.includes("Taiwan")))
+
   // Perform calculations
+  laureates.forEach(laureate => {
+    if (laureate.birth_country !== "") {
+      console.log(laureate.birth_country);
+      const country =  countries.features.find(f => f.properties.name === laureate.birth_country);
+      if (country.laureates) {
+        country.laureates.push(laureate);
+      } else {
+        country["laureates"] = [laureate];
+      }
+    }
+  });
 
   // Dimensions
   const width = 1400;

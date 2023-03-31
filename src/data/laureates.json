@@ -308,7 +308,7 @@
     "name": "Sir William Ramsay",
     "birth_date": "1852-10-02",
     "birth_city": "Glasgow",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "University College",
     "organization_city": "London",
@@ -533,7 +533,7 @@
     "name": "Theodore Roosevelt",
     "birth_date": "1858-10-27",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -642,7 +642,7 @@
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1908,
@@ -1077,7 +1077,7 @@
     "sex": "Male",
     "organization_name": "Rockefeller Institute for Medical Research",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1912,
@@ -1088,7 +1088,7 @@
     "name": "Elihu Root",
     "birth_date": "1845-02-15",
     "birth_city": "Clinton, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -1193,11 +1193,11 @@
     "name": "Theodore William Richards",
     "birth_date": "1868-01-31",
     "birth_city": "Germantown, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1914,
@@ -1433,7 +1433,7 @@
     "name": "Thomas Woodrow Wilson",
     "birth_date": "1856-12-28",
     "birth_city": "Staunton, VA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -1748,7 +1748,7 @@
     "name": "John James Rickard Macleod",
     "birth_date": "1876-09-06",
     "birth_city": "Cluny",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "University of Toronto",
     "organization_city": "Toronto",
@@ -1763,11 +1763,11 @@
     "name": "Robert Andrews Millikan",
     "birth_date": "1868-03-22",
     "birth_city": "Morrison, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1924,
@@ -1868,7 +1868,7 @@
     "name": "Charles Gates Dawes",
     "birth_date": "1865-08-27",
     "birth_city": "Marietta, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -2078,11 +2078,11 @@
     "name": "Arthur Holly Compton",
     "birth_date": "1892-09-10",
     "birth_city": "Wooster, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1927,
@@ -2093,7 +2093,7 @@
     "name": "Charles Thomson Rees Wilson",
     "birth_date": "1869-02-14",
     "birth_city": "Glencorse",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "University of Cambridge",
     "organization_city": "Cambridge",
@@ -2243,7 +2243,7 @@
     "name": "Frank Billings Kellogg",
     "birth_date": "1856-12-22",
     "birth_city": "Potsdam, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -2288,7 +2288,7 @@
     "name": "Sinclair Lewis",
     "birth_date": "1885-02-07",
     "birth_city": "Sauk Centre, MN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -2307,7 +2307,7 @@
     "sex": "Male",
     "organization_name": "Rockefeller Institute for Medical Research",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1930,
@@ -2408,7 +2408,7 @@
     "name": "Jane Addams",
     "birth_date": "1860-09-06",
     "birth_city": "Cedarville, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "",
@@ -2423,11 +2423,11 @@
     "name": "Nicholas Murray Butler",
     "birth_date": "1862-04-02",
     "birth_city": "Elizabeth, NJ",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1932,
@@ -2438,11 +2438,11 @@
     "name": "Irving Langmuir",
     "birth_date": "1881-01-31",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "General Electric Company",
     "organization_city": "Schenectady, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1932,
@@ -2528,11 +2528,11 @@
     "name": "Thomas Hunt Morgan",
     "birth_date": "1866-09-25",
     "birth_city": "Lexington, KY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1933,
@@ -2588,11 +2588,11 @@
     "name": "Harold Clayton Urey",
     "birth_date": "1893-04-29",
     "birth_city": "Walkerton, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1934,
@@ -2618,11 +2618,11 @@
     "name": "George Hoyt Whipple",
     "birth_date": "1878-08-28",
     "birth_city": "Ashland, NH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Rochester",
     "organization_city": "Rochester, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1934,
@@ -2633,11 +2633,11 @@
     "name": "George Richards Minot",
     "birth_date": "1885-12-02",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1934,
@@ -2648,11 +2648,11 @@
     "name": "William Parry Murphy",
     "birth_date": "1892-02-06",
     "birth_city": "Stoughton, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1934,
@@ -2663,7 +2663,7 @@
     "name": "Arthur Henderson",
     "birth_date": "1863-09-13",
     "birth_city": "Glasgow",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -2768,7 +2768,7 @@
     "name": "Eugene Gladstone O'Neill",
     "birth_date": "1888-10-16",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -2843,11 +2843,11 @@
     "name": "Carl David Anderson",
     "birth_date": "1905-09-03",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1937,
@@ -2933,11 +2933,11 @@
     "name": "Clinton Joseph Davisson",
     "birth_date": "1881-10-22",
     "birth_city": "Bloomington, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Bell Telephone Laboratories",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1937,
@@ -2978,7 +2978,7 @@
     "name": "Pearl Buck",
     "birth_date": "1892-06-26",
     "birth_city": "Hillsboro, WV",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "",
@@ -3098,11 +3098,11 @@
     "name": "Ernest Orlando Lawrence",
     "birth_date": "1901-08-08",
     "birth_city": "Canton, SD",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1943,
@@ -3143,11 +3143,11 @@
     "name": "Edward Adelbert Doisy",
     "birth_date": "1893-11-13",
     "birth_city": "Hume, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Saint Louis University",
     "organization_city": "St. Louis, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1943,
@@ -3162,7 +3162,7 @@
     "sex": "Male",
     "organization_name": "Carnegie Institute of Technology",
     "organization_city": "Pittsburgh, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1944,
@@ -3203,11 +3203,11 @@
     "name": "Joseph Erlanger",
     "birth_date": "1874-01-05",
     "birth_city": "San Francisco, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Washington University",
     "organization_city": "St. Louis, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1944,
@@ -3218,11 +3218,11 @@
     "name": "Herbert Spencer Gasser",
     "birth_date": "1888-07-05",
     "birth_city": "Platteville, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller Institute for Medical Research",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1944,
@@ -3252,7 +3252,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1945,
@@ -3293,7 +3293,7 @@
     "name": "Sir Alexander Fleming",
     "birth_date": "1881-08-06",
     "birth_city": "Lochfield",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "London University",
     "organization_city": "London",
@@ -3338,7 +3338,7 @@
     "name": "Cordell Hull",
     "birth_date": "1871-10-02",
     "birth_city": "Olympus, TN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -3357,7 +3357,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1946,
@@ -3368,11 +3368,11 @@
     "name": "James Batcheller Sumner",
     "birth_date": "1887-11-19",
     "birth_city": "Canton, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1946,
@@ -3383,11 +3383,11 @@
     "name": "John Howard Northrop",
     "birth_date": "1891-07-05",
     "birth_city": "Yonkers, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller Institute for Medical Research",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1946,
@@ -3398,11 +3398,11 @@
     "name": "Wendell Meredith Stanley",
     "birth_date": "1904-08-16",
     "birth_city": "Ridgeville, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller Institute for Medical Research",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1946,
@@ -3428,11 +3428,11 @@
     "name": "Hermann Joseph Muller",
     "birth_date": "1890-12-21",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Indiana University",
     "organization_city": "Bloomington, IN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1946,
@@ -3443,7 +3443,7 @@
     "name": "Emily Greene Balch",
     "birth_date": "1867-01-08",
     "birth_city": "Jamaica Plain, MA (Boston)",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "",
@@ -3458,7 +3458,7 @@
     "name": "John Raleigh Mott",
     "birth_date": "1865-05-25",
     "birth_city": "Livingston Manor, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -3473,11 +3473,11 @@
     "name": "Percy Williams Bridgman",
     "birth_date": "1882-04-21",
     "birth_city": "Cambridge, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1947,
@@ -3522,7 +3522,7 @@
     "sex": "Male",
     "organization_name": "Washington University",
     "organization_city": "St. Louis, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1947,
@@ -3537,7 +3537,7 @@
     "sex": "Female",
     "organization_name": "Washington University",
     "organization_city": "St. Louis, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1947,
@@ -3623,7 +3623,7 @@
     "name": "Thomas Stearns Eliot",
     "birth_date": "1888-09-26",
     "birth_city": "St. Louis, MO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -3672,7 +3672,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1949,
@@ -3683,7 +3683,7 @@
     "name": "William Faulkner",
     "birth_date": "1897-09-25",
     "birth_city": "New Albany, MS",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -3728,7 +3728,7 @@
     "name": "Lord (John) Boyd Orr of Brechin",
     "birth_date": "1880-09-23",
     "birth_city": "Kilmaurs",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -3803,11 +3803,11 @@
     "name": "Edward Calvin Kendall",
     "birth_date": "1886-03-08",
     "birth_city": "South Norwalk, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Mayo Clinic",
     "organization_city": "Rochester, MN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1950,
@@ -3833,11 +3833,11 @@
     "name": "Philip Showalter Hench",
     "birth_date": "1896-02-28",
     "birth_city": "Pittsburgh, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Mayo Clinic",
     "organization_city": "Rochester, MN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1950,
@@ -3848,11 +3848,11 @@
     "name": "Ralph Bunche",
     "birth_date": "1904-08-07",
     "birth_city": "Detroit, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1950,
@@ -3878,11 +3878,11 @@
     "name": "Edwin Mattison McMillan",
     "birth_date": "1907-09-18",
     "birth_city": "Redondo Beach, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1951,
@@ -3893,11 +3893,11 @@
     "name": "Glenn Theodore Seaborg",
     "birth_date": "1912-04-19",
     "birth_city": "Ishpeming, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1951,
@@ -3927,7 +3927,7 @@
     "sex": "Male",
     "organization_name": "Laboratories of the Division of Medicine and Public Health, Rockefeller Foundation",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1951,
@@ -4032,7 +4032,7 @@
     "sex": "Male",
     "organization_name": "Rutgers University",
     "organization_city": "New Brunswick, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1952,
@@ -4062,7 +4062,7 @@
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1952,
@@ -4073,11 +4073,11 @@
     "name": "Edward Mills Purcell",
     "birth_date": "1912-08-30",
     "birth_city": "Taylorville, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1953,
@@ -4137,7 +4137,7 @@
     "sex": "Male",
     "organization_name": "Harvard Medical School",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1953,
@@ -4148,7 +4148,7 @@
     "name": "George Catlett Marshall",
     "birth_date": "1880-12-31",
     "birth_city": "Uniontown, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -4178,11 +4178,11 @@
     "name": "Linus Carl Pauling",
     "birth_date": "1901-02-28",
     "birth_city": "Portland, OR",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1954,
@@ -4193,7 +4193,7 @@
     "name": "Ernest Miller Hemingway",
     "birth_date": "1899-07-21",
     "birth_city": "Oak Park, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -4208,11 +4208,11 @@
     "name": "John Franklin Enders",
     "birth_date": "1897-02-10",
     "birth_city": "West Hartford, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard Medical School",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1954,
@@ -4223,11 +4223,11 @@
     "name": "Thomas Huckle Weller",
     "birth_date": "1915-06-15",
     "birth_city": "Ann Arbor, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Research Division of Infectious Diseases, Children's Medical Center",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1954,
@@ -4238,11 +4238,11 @@
     "name": "Frederick Chapman Robbins",
     "birth_date": "1916-08-25",
     "birth_city": "Auburn, AL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Western Reserve University",
     "organization_city": "Cleveland, OH",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1954,
@@ -4298,11 +4298,11 @@
     "name": "Vincent du Vigneaud",
     "birth_date": "1901-05-18",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1955,
@@ -4343,11 +4343,11 @@
     "name": "Willis Eugene Lamb",
     "birth_date": "1913-07-12",
     "birth_city": "Los Angeles, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1955,
@@ -4362,7 +4362,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1956,
@@ -4422,7 +4422,7 @@
     "sex": "Male",
     "organization_name": "Columbia University Division, Cardio-Pulmonary Laboratory, Bellevue Hospital",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1956,
@@ -4448,11 +4448,11 @@
     "name": "Dickinson W. Richards",
     "birth_date": "1895-10-30",
     "birth_city": "Orange, NJ",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1956,
@@ -4467,7 +4467,7 @@
     "sex": "Male",
     "organization_name": "Semiconductor Laboratory of Beckman Instruments, Inc.",
     "organization_city": "Mountain View, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1956,
@@ -4478,11 +4478,11 @@
     "name": "John Bardeen",
     "birth_date": "1908-05-23",
     "birth_city": "Madison, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Illinois",
     "organization_city": "Urbana, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1956,
@@ -4497,7 +4497,7 @@
     "sex": "Male",
     "organization_name": "Bell Telephone Laboratories",
     "organization_city": "Murray Hill, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1957,
@@ -4508,7 +4508,7 @@
     "name": "Lord (Alexander R.) Todd",
     "birth_date": "1907-10-02",
     "birth_city": "Glasgow",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "University of Cambridge",
     "organization_city": "Cambridge",
@@ -4572,7 +4572,7 @@
     "sex": "Male",
     "organization_name": "Institute for Advanced Study",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1957,
@@ -4587,7 +4587,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1958,
@@ -4628,11 +4628,11 @@
     "name": "George Wells Beadle",
     "birth_date": "1903-10-22",
     "birth_city": "Wahoo, NE",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1958,
@@ -4643,11 +4643,11 @@
     "name": "Edward Lawrie Tatum",
     "birth_date": "1909-12-14",
     "birth_city": "Boulder, CO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller Institute for Medical Research",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1958,
@@ -4658,11 +4658,11 @@
     "name": "Joshua Lederberg",
     "birth_date": "1925-05-23",
     "birth_city": "Montclair, NJ",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Wisconsin",
     "organization_city": "Madison, WI",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1958,
@@ -4767,7 +4767,7 @@
     "sex": "Male",
     "organization_name": "New York University, College of Medicine",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1959,
@@ -4778,11 +4778,11 @@
     "name": "Arthur Kornberg",
     "birth_date": "1918-03-03",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1959,
@@ -4812,7 +4812,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1959,
@@ -4823,11 +4823,11 @@
     "name": "Owen Chamberlain",
     "birth_date": "1920-07-10",
     "birth_city": "San Francisco, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1960,
@@ -4838,11 +4838,11 @@
     "name": "Willard Frank Libby",
     "birth_date": "1908-12-17",
     "birth_city": "Grand Valley, CO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1960,
@@ -4913,11 +4913,11 @@
     "name": "Donald Arthur Glaser",
     "birth_date": "1926-09-21",
     "birth_city": "Cleveland, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1961,
@@ -4928,11 +4928,11 @@
     "name": "Melvin Calvin",
     "birth_date": "1911-04-08",
     "birth_city": "St. Paul, MN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1961,
@@ -4962,7 +4962,7 @@
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1961,
@@ -4988,11 +4988,11 @@
     "name": "Robert Hofstadter",
     "birth_date": "1915-02-05",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1961,
@@ -5048,7 +5048,7 @@
     "name": "John Steinbeck",
     "birth_date": "1902-02-27",
     "birth_city": "Salinas, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -5078,11 +5078,11 @@
     "name": "James Dewey Watson",
     "birth_date": "1928-04-06",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1962,
@@ -5108,11 +5108,11 @@
     "name": "Linus Carl Pauling",
     "birth_date": "1901-02-28",
     "birth_city": "Portland, OR",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1962,
@@ -5262,7 +5262,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1963,
@@ -5277,7 +5277,7 @@
     "sex": "Female",
     "organization_name": "University of California",
     "organization_city": "San Diego, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1963,
@@ -5337,7 +5337,7 @@
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1964,
@@ -5363,7 +5363,7 @@
     "name": "Martin Luther King Jr.",
     "birth_date": "1929-01-15",
     "birth_city": "Atlanta, GA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -5378,11 +5378,11 @@
     "name": "Charles Hard Townes",
     "birth_date": "1915-07-28",
     "birth_city": "Greenville, SC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1964,
@@ -5423,11 +5423,11 @@
     "name": "Robert Burns Woodward",
     "birth_date": "1917-04-10",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1965,
@@ -5528,11 +5528,11 @@
     "name": "Julian Schwinger",
     "birth_date": "1918-02-12",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1965,
@@ -5543,11 +5543,11 @@
     "name": "Richard P. Feynman",
     "birth_date": "1918-05-11",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1966,
@@ -5558,11 +5558,11 @@
     "name": "Robert S. Mulliken",
     "birth_date": "1896-06-07",
     "birth_city": "Newburyport, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1966,
@@ -5603,11 +5603,11 @@
     "name": "Peyton Rous",
     "birth_date": "1879-10-05",
     "birth_city": "Baltimore, MD",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1966,
@@ -5622,7 +5622,7 @@
     "sex": "Male",
     "organization_name": "University of Chicago, Ben May Laboratory for Cancer Research",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1966,
@@ -5723,11 +5723,11 @@
     "name": "Haldan Keffer Hartline",
     "birth_date": "1903-12-22",
     "birth_city": "Bloomsburg, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1967,
@@ -5738,11 +5738,11 @@
     "name": "George Wald",
     "birth_date": "1906-11-18",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1967,
@@ -5757,7 +5757,7 @@
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1968,
@@ -5772,7 +5772,7 @@
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1968,
@@ -5798,11 +5798,11 @@
     "name": "Robert W. Holley",
     "birth_date": "1922-01-28",
     "birth_city": "Urbana, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1968,
@@ -5817,7 +5817,7 @@
     "sex": "Male",
     "organization_name": "University of Wisconsin",
     "organization_city": "Madison, WI",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1968,
@@ -5828,11 +5828,11 @@
     "name": "Marshall W. Nirenberg",
     "birth_date": "1927-04-10",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institutes of Health",
     "organization_city": "Bethesda, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1968,
@@ -5858,11 +5858,11 @@
     "name": "Luis Walter Alvarez",
     "birth_date": "1911-06-13",
     "birth_city": "San Francisco, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1969,
@@ -5952,7 +5952,7 @@
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1969,
@@ -5963,11 +5963,11 @@
     "name": "Alfred D. Hershey",
     "birth_date": "1908-12-04",
     "birth_city": "Owosso, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Carnegie Institution of Washington",
     "organization_city": "Long Island, New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1969,
@@ -5982,7 +5982,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1969,
@@ -6008,11 +6008,11 @@
     "name": "Murray Gell-Mann",
     "birth_date": "1929-09-15",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1970,
@@ -6038,11 +6038,11 @@
     "name": "Paul A. Samuelson",
     "birth_date": "1915-05-15",
     "birth_city": "Gary, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1970,
@@ -6098,11 +6098,11 @@
     "name": "Julius Axelrod",
     "birth_date": "1912-05-30",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institutes of Health",
     "organization_city": "Bethesda, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1970,
@@ -6113,7 +6113,7 @@
     "name": "Norman E. Borlaug",
     "birth_date": "1914-03-25",
     "birth_city": "Cresco, IA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -6177,7 +6177,7 @@
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1971,
@@ -6203,11 +6203,11 @@
     "name": "Earl W. Sutherland, Jr.",
     "birth_date": "1915-11-19",
     "birth_city": "Burlingame, KS",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Vanderbilt University",
     "organization_city": "Nashville, TN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1971,
@@ -6248,11 +6248,11 @@
     "name": "Christian B. Anfinsen",
     "birth_date": "1916-03-26",
     "birth_city": "Monessen, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institutes of Health",
     "organization_city": "Bethesda, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1972,
@@ -6263,11 +6263,11 @@
     "name": "Stanford Moore",
     "birth_date": "1913-09-04",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1972,
@@ -6278,11 +6278,11 @@
     "name": "William H. Stein",
     "birth_date": "1911-06-25",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1972,
@@ -6308,11 +6308,11 @@
     "name": "Kenneth J. Arrow",
     "birth_date": "1921-08-23",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1972,
@@ -6338,11 +6338,11 @@
     "name": "Gerald M. Edelman",
     "birth_date": "1929-07-01",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1972,
@@ -6368,11 +6368,11 @@
     "name": "John Bardeen",
     "birth_date": "1908-05-23",
     "birth_city": "Madison, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Illinois",
     "organization_city": "Urbana, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1972,
@@ -6383,11 +6383,11 @@
     "name": "Leon Neil Cooper",
     "birth_date": "1930-02-28",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Brown University",
     "organization_city": "Providence, RI",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1972,
@@ -6398,11 +6398,11 @@
     "name": "John Robert Schrieffer",
     "birth_date": "1931-05-31",
     "birth_city": "Oak Park, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Pennsylvania",
     "organization_city": "Philadelphia, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1973,
@@ -6447,7 +6447,7 @@
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1973,
@@ -6552,7 +6552,7 @@
     "sex": "Male",
     "organization_name": "IBM Thomas J. Watson Research Center",
     "organization_city": "Yorktown Heights, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1973,
@@ -6567,7 +6567,7 @@
     "sex": "Male",
     "organization_name": "General Electric Company",
     "organization_city": "Schenectady, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1973,
@@ -6593,11 +6593,11 @@
     "name": "Paul J. Flory",
     "birth_date": "1910-06-19",
     "birth_city": "Sterling, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1974,
@@ -6687,7 +6687,7 @@
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1974,
@@ -6702,7 +6702,7 @@
     "sex": "Male",
     "organization_name": "Yale University, School of Medicine",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1974,
@@ -6788,7 +6788,7 @@
     "name": "Vladimir Prelog",
     "birth_date": "1906-07-23",
     "birth_city": "Sarajevo",
-    "birth_country": "Austria-Hungary (Bosnia and Herzegovina)",
+    "birth_country": "Bosnia and Herzegovina",
     "sex": "Male",
     "organization_name": "Eidgenössische Technische Hochschule (Swiss Federal Institute of Technology)",
     "organization_city": "Zurich",
@@ -6822,7 +6822,7 @@
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1975,
@@ -6848,11 +6848,11 @@
     "name": "David Baltimore",
     "birth_date": "1938-03-07",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1975,
@@ -6878,11 +6878,11 @@
     "name": "Howard Martin Temin",
     "birth_date": "1934-12-10",
     "birth_city": "Philadelphia, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Wisconsin",
     "organization_city": "Madison, WI",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1975,
@@ -6923,7 +6923,7 @@
     "name": "Ben Roy Mottelson",
     "birth_date": "1926-07-09",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Nordita",
     "organization_city": "Copenhagen",
@@ -6938,11 +6938,11 @@
     "name": "Leo James Rainwater",
     "birth_date": "1917-12-09",
     "birth_city": "Council, ID",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1976,
@@ -6953,11 +6953,11 @@
     "name": "William N. Lipscomb",
     "birth_date": "1919-12-09",
     "birth_city": "Cleveland, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1976,
@@ -6968,11 +6968,11 @@
     "name": "Milton Friedman",
     "birth_date": "1912-07-31",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1976,
@@ -6998,11 +6998,11 @@
     "name": "Baruch S. Blumberg",
     "birth_date": "1925-07-28",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "The Institute for Cancer Research",
     "organization_city": "Philadelphia, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1976,
@@ -7013,11 +7013,11 @@
     "name": "D. Carleton Gajdusek",
     "birth_date": "1923-09-09",
     "birth_city": "Yonkers, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institutes of Health",
     "organization_city": "Bethesda, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1976,
@@ -7028,7 +7028,7 @@
     "name": "Betty Williams",
     "birth_date": "1943-05-22",
     "birth_city": "Belfast",
-    "birth_country": "Northern Ireland",
+    "birth_country": "United Kingdom",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "",
@@ -7043,7 +7043,7 @@
     "name": "Mairead Corrigan",
     "birth_date": "1944-01-27",
     "birth_city": "Belfast",
-    "birth_country": "Northern Ireland",
+    "birth_country": "United Kingdom",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "",
@@ -7058,11 +7058,11 @@
     "name": "Burton Richter",
     "birth_date": "1931-03-22",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford Linear Accelerator Center",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1976,
@@ -7073,11 +7073,11 @@
     "name": "Samuel Chao Chung Ting",
     "birth_date": "1936-01-27",
     "birth_city": "Ann Arbor, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1977,
@@ -7152,7 +7152,7 @@
     "sex": "Male",
     "organization_name": "The Salk Institute",
     "organization_city": "San Diego, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1977,
@@ -7167,7 +7167,7 @@
     "sex": "Male",
     "organization_name": "Veterans Administration Hospital",
     "organization_city": "New Orleans, LA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1977,
@@ -7178,11 +7178,11 @@
     "name": "Rosalyn Yalow",
     "birth_date": "1921-07-19",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "Veterans Administration Hospital",
     "organization_city": "Bronx, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1977,
@@ -7208,11 +7208,11 @@
     "name": "Philip Warren Anderson",
     "birth_date": "1923-12-13",
     "birth_city": "Indianapolis, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Bell Telephone Laboratories",
     "organization_city": "Murray Hill, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1977,
@@ -7238,11 +7238,11 @@
     "name": "John Hasbrouck van Vleck",
     "birth_date": "1899-03-13",
     "birth_city": "Middletown, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1978,
@@ -7268,11 +7268,11 @@
     "name": "Herbert A. Simon",
     "birth_date": "1916-06-15",
     "birth_city": "Milwaukee, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Carnegie Mellon University",
     "organization_city": "Pittsburgh, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1978,
@@ -7313,11 +7313,11 @@
     "name": "Daniel Nathans",
     "birth_date": "1928-10-30",
     "birth_city": "Wilmington, DE",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Johns Hopkins University School of Medicine",
     "organization_city": "Baltimore, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1978,
@@ -7328,11 +7328,11 @@
     "name": "Hamilton O. Smith",
     "birth_date": "1931-08-23",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Johns Hopkins University School of Medicine",
     "organization_city": "Baltimore, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1978,
@@ -7392,7 +7392,7 @@
     "sex": "Male",
     "organization_name": "Bell Laboratories",
     "organization_city": "Holmdel, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1978,
@@ -7403,11 +7403,11 @@
     "name": "Robert Woodrow Wilson",
     "birth_date": "1936-01-10",
     "birth_city": "Houston, TX",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Bell Laboratories",
     "organization_city": "Holmdel, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1979,
@@ -7422,7 +7422,7 @@
     "sex": "Male",
     "organization_name": "Purdue University",
     "organization_city": "West Lafayette, IN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1979,
@@ -7448,11 +7448,11 @@
     "name": "Theodore W. Schultz",
     "birth_date": "1902-04-30",
     "birth_city": "Arlington, SD",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1979,
@@ -7467,7 +7467,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1979,
@@ -7497,7 +7497,7 @@
     "sex": "Male",
     "organization_name": "Tufts University",
     "organization_city": "Medford, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1979,
@@ -7538,11 +7538,11 @@
     "name": "Sheldon Lee Glashow",
     "birth_date": "1932-12-05",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University, Lyman Laboratory",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1979,
@@ -7568,11 +7568,11 @@
     "name": "Steven Weinberg",
     "birth_date": "1933-05-03",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1980,
@@ -7598,11 +7598,11 @@
     "name": "Paul Berg",
     "birth_date": "1926-06-30",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1980,
@@ -7613,11 +7613,11 @@
     "name": "Walter Gilbert",
     "birth_date": "1932-03-21",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University, Biological Laboratories",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1980,
@@ -7628,11 +7628,11 @@
     "name": "Lawrence R. Klein",
     "birth_date": "1920-09-14",
     "birth_city": "Omaha, NE",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Pennsylvania",
     "organization_city": "Philadelphia, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1980,
@@ -7662,7 +7662,7 @@
     "sex": "Male",
     "organization_name": "Harvard Medical School",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1980,
@@ -7688,11 +7688,11 @@
     "name": "George D. Snell",
     "birth_date": "1903-12-19",
     "birth_city": "Bradford, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Jackson Laboratory",
     "organization_city": "Bar Harbor, ME",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1980,
@@ -7718,11 +7718,11 @@
     "name": "James Watson Cronin",
     "birth_date": "1931-09-29",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1980,
@@ -7733,11 +7733,11 @@
     "name": "Val Logsdon Fitch",
     "birth_date": "1923-03-10",
     "birth_city": "Merriman, NE",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7767,7 +7767,7 @@
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7778,11 +7778,11 @@
     "name": "James Tobin",
     "birth_date": "1918-03-05",
     "birth_city": "Champaign, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7808,11 +7808,11 @@
     "name": "Roger W. Sperry",
     "birth_date": "1913-08-20",
     "birth_city": "Hartford, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7827,7 +7827,7 @@
     "sex": "Male",
     "organization_name": "Harvard Medical School",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7842,7 +7842,7 @@
     "sex": "Male",
     "organization_name": "Harvard Medical School",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7872,7 +7872,7 @@
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7883,11 +7883,11 @@
     "name": "Arthur Leonard Schawlow",
     "birth_date": "1921-05-05",
     "birth_city": "Mount Verno, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1981,
@@ -7928,11 +7928,11 @@
     "name": "George J. Stigler",
     "birth_date": "1911-01-17",
     "birth_city": "Renton, WA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1982,
@@ -8033,11 +8033,11 @@
     "name": "Kenneth G. Wilson",
     "birth_date": "1936-06-08",
     "birth_city": "Waltham, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1983,
@@ -8052,7 +8052,7 @@
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1983,
@@ -8067,7 +8067,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1983,
@@ -8093,11 +8093,11 @@
     "name": "Barbara McClintock",
     "birth_date": "1902-06-16",
     "birth_city": "Hartford, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "Cold Spring Harbor Laboratory",
     "organization_city": "Cold Spring Harbor, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1983,
@@ -8127,7 +8127,7 @@
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1983,
@@ -8138,11 +8138,11 @@
     "name": "William Alfred Fowler",
     "birth_date": "1911-08-09",
     "birth_city": "Pittsburgh, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1984,
@@ -8153,11 +8153,11 @@
     "name": "Robert Bruce Merrifield",
     "birth_date": "1921-07-15",
     "birth_city": "Fort Worth, TX",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1984,
@@ -8288,11 +8288,11 @@
     "name": "Herbert A. Hauptman",
     "birth_date": "1917-02-14",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "The Medical Foundation of Buffalo",
     "organization_city": "Buffalo, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1985,
@@ -8303,11 +8303,11 @@
     "name": "Jerome Karle",
     "birth_date": "1918-06-18",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "US Naval Research Laboratory",
     "organization_city": "Washington, DC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1985,
@@ -8322,7 +8322,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1985,
@@ -8348,11 +8348,11 @@
     "name": "Michael S. Brown",
     "birth_date": "1941-04-13",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Texas Southwestern Medical Center at Dallas",
     "organization_city": "Dallas, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1985,
@@ -8363,11 +8363,11 @@
     "name": "Joseph L. Goldstein",
     "birth_date": "1940-04-18",
     "birth_city": "Sumter, SC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Texas Southwestern Medical Center at Dallas",
     "organization_city": "Dallas, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1985,
@@ -8408,11 +8408,11 @@
     "name": "Dudley R. Herschbach",
     "birth_date": "1932-06-18",
     "birth_city": "San José, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1986,
@@ -8427,7 +8427,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1986,
@@ -8453,11 +8453,11 @@
     "name": "James M. Buchanan Jr.",
     "birth_date": "1919-10-03",
     "birth_city": "Murfreesboro, TN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Center for Study of Public Choice",
     "organization_city": "Fairfax, VA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1986,
@@ -8483,11 +8483,11 @@
     "name": "Stanley Cohen",
     "birth_date": "1922-11-17",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Vanderbilt University School of Medicine",
     "organization_city": "Nashville, TN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1986,
@@ -8573,11 +8573,11 @@
     "name": "Donald J. Cram",
     "birth_date": "1919-04-22",
     "birth_city": "Chester, VT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1987,
@@ -8607,7 +8607,7 @@
     "sex": "Male",
     "organization_name": "Du Pont",
     "organization_city": "Wilmington, DE",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1987,
@@ -8618,11 +8618,11 @@
     "name": "Robert M. Solow",
     "birth_date": "1924-08-23",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1987,
@@ -8652,7 +8652,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1987,
@@ -8712,7 +8712,7 @@
     "sex": "Male",
     "organization_name": "University of Texas Southwestern Medical Center at Dallas",
     "organization_city": "Dallas, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1988,
@@ -8783,7 +8783,7 @@
     "name": "Sir James W. Black",
     "birth_date": "1924-06-14",
     "birth_city": "Uddingston",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "London University, King's College Hospital Medical School",
     "organization_city": "London",
@@ -8798,11 +8798,11 @@
     "name": "Gertrude B. Elion",
     "birth_date": "1918-01-23",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "Wellcome Research Laboratories",
     "organization_city": "Research Triangle Park, NC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1988,
@@ -8813,11 +8813,11 @@
     "name": "George H. Hitchings",
     "birth_date": "1905-04-18",
     "birth_city": "Hoquiam, WA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Wellcome Research Laboratories",
     "organization_city": "Research Triangle Park, NC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1988,
@@ -8843,11 +8843,11 @@
     "name": "Leon M. Lederman",
     "birth_date": "1922-07-15",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Fermi National Accelerator Laboratory",
     "organization_city": "Batavia, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1988,
@@ -8858,11 +8858,11 @@
     "name": "Melvin Schwartz",
     "birth_date": "1932-11-02",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Digital Pathways, Inc.",
     "organization_city": "Mountain View, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1988,
@@ -8892,7 +8892,7 @@
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1989,
@@ -8903,11 +8903,11 @@
     "name": "Thomas R. Cech",
     "birth_date": "1947-12-08",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Colorado",
     "organization_city": "Boulder, CO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1989,
@@ -8948,11 +8948,11 @@
     "name": "J. Michael Bishop",
     "birth_date": "1936-02-22",
     "birth_city": "York, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California School of Medicine",
     "organization_city": "San Francisco, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1989,
@@ -8963,11 +8963,11 @@
     "name": "Harold E. Varmus",
     "birth_date": "1939-12-18",
     "birth_city": "Oceanside, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California School of Medicine",
     "organization_city": "San Francisco, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1989,
@@ -8993,11 +8993,11 @@
     "name": "Norman F. Ramsey",
     "birth_date": "1915-08-27",
     "birth_city": "Washington, DC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1989,
@@ -9012,7 +9012,7 @@
     "sex": "Male",
     "organization_name": "University of Washington",
     "organization_city": "Seattle, WA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1989,
@@ -9038,11 +9038,11 @@
     "name": "Elias James Corey",
     "birth_date": "1928-07-12",
     "birth_city": "Methuen, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9053,11 +9053,11 @@
     "name": "Harry M. Markowitz",
     "birth_date": "1927-08-24",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "City University of New York",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9068,11 +9068,11 @@
     "name": "Merton H. Miller",
     "birth_date": "1923-05-16",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9083,11 +9083,11 @@
     "name": "William F. Sharpe",
     "birth_date": "1934-06-16",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9113,11 +9113,11 @@
     "name": "Joseph E. Murray",
     "birth_date": "1919-04-01",
     "birth_city": "Milford, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Brigham and Women's Hospital",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9128,11 +9128,11 @@
     "name": "E. Donnall Thomas",
     "birth_date": "1920-03-15",
     "birth_city": "Mart, TX",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Fred Hutchinson Cancer Research Center",
     "organization_city": "Seattle, WA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9158,11 +9158,11 @@
     "name": "Jerome I. Friedman",
     "birth_date": "1930-03-28",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9173,11 +9173,11 @@
     "name": "Henry W. Kendall",
     "birth_date": "1926-12-09",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1990,
@@ -9192,7 +9192,7 @@
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1991,
@@ -9222,7 +9222,7 @@
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1991,
@@ -9312,7 +9312,7 @@
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1992,
@@ -9323,11 +9323,11 @@
     "name": "Gary S. Becker",
     "birth_date": "1930-12-02",
     "birth_city": "Pottsville, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1992,
@@ -9357,7 +9357,7 @@
     "sex": "Male",
     "organization_name": "University of Washington",
     "organization_city": "Seattle, WA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1992,
@@ -9368,11 +9368,11 @@
     "name": "Edwin G. Krebs",
     "birth_date": "1918-06-06",
     "birth_city": "Lansing, IA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Washington",
     "organization_city": "Seattle, WA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1992,
@@ -9413,11 +9413,11 @@
     "name": "Kary B. Mullis",
     "birth_date": "1944-12-28",
     "birth_city": "Lenoir, NC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "La Jolla, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1993,
@@ -9443,11 +9443,11 @@
     "name": "Robert W. Fogel",
     "birth_date": "1927-07-01",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1993,
@@ -9458,11 +9458,11 @@
     "name": "Douglass C. North",
     "birth_date": "1920-11-05",
     "birth_city": "Cambridge, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Washington University",
     "organization_city": "St. Louis, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1993,
@@ -9473,7 +9473,7 @@
     "name": "Toni Morrison",
     "birth_date": "1931-02-18",
     "birth_city": "Lorain, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "",
@@ -9492,7 +9492,7 @@
     "sex": "Male",
     "organization_name": "New England Biolabs",
     "organization_city": "Beverly, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1993,
@@ -9503,11 +9503,11 @@
     "name": "Phillip A. Sharp",
     "birth_date": "1944-06-06",
     "birth_city": "Falmouth, KY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT), Center for Cancer Research",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1993,
@@ -9548,11 +9548,11 @@
     "name": "Russell A. Hulse",
     "birth_date": "1950-11-28",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1993,
@@ -9563,11 +9563,11 @@
     "name": "Joseph H. Taylor Jr.",
     "birth_date": "1941-03-29",
     "birth_city": "Philadelphia, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1994,
@@ -9582,7 +9582,7 @@
     "sex": "Male",
     "organization_name": "University of Southern California",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1994,
@@ -9597,7 +9597,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1994,
@@ -9608,11 +9608,11 @@
     "name": "John F. Nash Jr.",
     "birth_date": "1928-06-13",
     "birth_city": "Bluefield, WV",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1994,
@@ -9653,11 +9653,11 @@
     "name": "Alfred G. Gilman",
     "birth_date": "1941-07-01",
     "birth_city": "New Haven, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Texas Southwestern Medical Center at Dallas",
     "organization_city": "Dallas, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1994,
@@ -9668,11 +9668,11 @@
     "name": "Martin Rodbell",
     "birth_date": "1925-12-01",
     "birth_city": "Baltimore, MD",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institute of Environmental Health Sciences",
     "organization_city": "Research Triangle Park, NC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1994,
@@ -9743,11 +9743,11 @@
     "name": "Clifford G. Shull",
     "birth_date": "1915-09-23",
     "birth_city": "Pittsburgh, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1995,
@@ -9777,7 +9777,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1995,
@@ -9788,11 +9788,11 @@
     "name": "F. Sherwood Rowland",
     "birth_date": "1927-06-28",
     "birth_city": "Delaware, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Irvine, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1995,
@@ -9803,11 +9803,11 @@
     "name": "Robert E. Lucas Jr.",
     "birth_date": "1937-09-15",
     "birth_city": "Yakima, WA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1995,
@@ -9818,7 +9818,7 @@
     "name": "Seamus Heaney",
     "birth_date": "1939-04-13",
     "birth_city": "Casteldàwson",
-    "birth_country": "Northern Ireland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -9833,11 +9833,11 @@
     "name": "Edward B. Lewis",
     "birth_date": "1918-05-20",
     "birth_city": "Wilkes-Barre, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1995,
@@ -9863,11 +9863,11 @@
     "name": "Eric F. Wieschaus",
     "birth_date": "1947-06-08",
     "birth_city": "South Bend, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1995,
@@ -9908,11 +9908,11 @@
     "name": "Martin L. Perl",
     "birth_date": "1927-06-24",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1995,
@@ -9923,11 +9923,11 @@
     "name": "Frederick Reines",
     "birth_date": "1918-03-16",
     "birth_city": "Paterson, NJ",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Irvine, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1996,
@@ -9938,11 +9938,11 @@
     "name": "Robert F. Curl Jr.",
     "birth_date": "1933-08-23",
     "birth_city": "Alice, TX",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rice University",
     "organization_city": "Houston, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1996,
@@ -9968,11 +9968,11 @@
     "name": "Richard E. Smalley",
     "birth_date": "1943-06-06",
     "birth_city": "Akron, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rice University",
     "organization_city": "Houston, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1996,
@@ -9983,7 +9983,7 @@
     "name": "James A. Mirrlees",
     "birth_date": "1936-07-05",
     "birth_city": "Minnigaff",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "University of Cambridge",
     "organization_city": "Cambridge",
@@ -10002,7 +10002,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1996,
@@ -10032,7 +10032,7 @@
     "sex": "Male",
     "organization_name": "St. Jude Children's Research Hospital",
     "organization_city": "Memphis, TN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1996,
@@ -10088,11 +10088,11 @@
     "name": "David M. Lee",
     "birth_date": "1931-01-20",
     "birth_city": "Rye, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1996,
@@ -10103,11 +10103,11 @@
     "name": "Douglas D. Osheroff",
     "birth_date": "1945-08-01",
     "birth_city": "Aberdeen, WA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1996,
@@ -10118,11 +10118,11 @@
     "name": "Robert C. Richardson",
     "birth_date": "1937-06-26",
     "birth_city": "Washington, DC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Cornell University",
     "organization_city": "Ithaca, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1997,
@@ -10133,11 +10133,11 @@
     "name": "Paul D. Boyer",
     "birth_date": "1918-07-31",
     "birth_city": "Provo, UT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1997,
@@ -10178,11 +10178,11 @@
     "name": "Robert C. Merton",
     "birth_date": "1944-07-31",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1997,
@@ -10197,7 +10197,7 @@
     "sex": "Male",
     "organization_name": "Long Term Capital Management",
     "organization_city": "Greenwich, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1997,
@@ -10223,11 +10223,11 @@
     "name": "Stanley B. Prusiner",
     "birth_date": "1942-05-28",
     "birth_city": "Des Moines, IA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California School of Medicine",
     "organization_city": "San Francisco, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1997,
@@ -10253,7 +10253,7 @@
     "name": "Jody Williams",
     "birth_date": "1950-10-09",
     "birth_city": "Putney, VT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "",
@@ -10268,11 +10268,11 @@
     "name": "Steven Chu",
     "birth_date": "1948-02-28",
     "birth_city": "St. Louis, MO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1997,
@@ -10298,11 +10298,11 @@
     "name": "William D. Phillips",
     "birth_date": "1948-11-05",
     "birth_city": "Wilkes-Barre, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institute of Standards and Technology",
     "organization_city": "Gaithersburg, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10317,7 +10317,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Santa Barbara, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10332,7 +10332,7 @@
     "sex": "Male",
     "organization_name": "Northwestern University",
     "organization_city": "Evanston, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10373,11 +10373,11 @@
     "name": "Robert F. Furchgott",
     "birth_date": "1916-06-04",
     "birth_city": "Charleston, SC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "SUNY Health Science Center",
     "organization_city": "Brooklyn, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10388,11 +10388,11 @@
     "name": "Louis J. Ignarro",
     "birth_date": "1941-05-31",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California School of Medicine",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10403,11 +10403,11 @@
     "name": "Ferid Murad",
     "birth_date": "1936-09-14",
     "birth_city": "Whiting, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Texas Medical School at Houston",
     "organization_city": "Houston, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10418,7 +10418,7 @@
     "name": "John Hume",
     "birth_date": "1937-01-18",
     "birth_city": "Londonderry",
-    "birth_country": "Northern Ireland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -10433,7 +10433,7 @@
     "name": "David Trimble",
     "birth_date": "1944-10-15",
     "birth_city": "Belfast",
-    "birth_country": "Northern Ireland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -10448,11 +10448,11 @@
     "name": "Robert B. Laughlin",
     "birth_date": "1950-11-01",
     "birth_city": "Visalia, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10467,7 +10467,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1998,
@@ -10482,7 +10482,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1999,
@@ -10497,7 +10497,7 @@
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1999,
@@ -10512,7 +10512,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1999,
@@ -10542,7 +10542,7 @@
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 1999,
@@ -10598,11 +10598,11 @@
     "name": "Alan J. Heeger",
     "birth_date": "1936-01-22",
     "birth_city": "Sioux City, IA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Santa Barbara, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2000,
@@ -10617,7 +10617,7 @@
     "sex": "Male",
     "organization_name": "University of Pennsylvania",
     "organization_city": "Philadelphia, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2000,
@@ -10643,11 +10643,11 @@
     "name": "James J. Heckman",
     "birth_date": "1944-04-19",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2000,
@@ -10658,11 +10658,11 @@
     "name": "Daniel L. McFadden",
     "birth_date": "1937-07-29",
     "birth_city": "Raleigh, NC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2000,
@@ -10703,11 +10703,11 @@
     "name": "Paul Greengard",
     "birth_date": "1925-12-11",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2000,
@@ -10722,7 +10722,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2000,
@@ -10767,7 +10767,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Santa Barbara, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2000,
@@ -10778,11 +10778,11 @@
     "name": "Jack S. Kilby",
     "birth_date": "1923-11-08",
     "birth_city": "Jefferson City, MO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Texas Instruments",
     "organization_city": "Dallas, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10793,11 +10793,11 @@
     "name": "William S. Knowles",
     "birth_date": "1917-06-01",
     "birth_city": "Taunton, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "St. Louis, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10823,11 +10823,11 @@
     "name": "K. Barry Sharpless",
     "birth_date": "1941-04-28",
     "birth_city": "Philadelphia, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "The Scripps Research Institute",
     "organization_city": "La Jolla, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10838,11 +10838,11 @@
     "name": "George A. Akerlof",
     "birth_date": "1940-06-17",
     "birth_city": "New Haven, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10853,11 +10853,11 @@
     "name": "A. Michael Spence",
     "birth_date": "1943-00-00",
     "birth_city": "Montclair, NJ",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10868,11 +10868,11 @@
     "name": "Joseph E. Stiglitz",
     "birth_date": "1943-02-09",
     "birth_city": "Gary, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10898,11 +10898,11 @@
     "name": "Leland H. Hartwell",
     "birth_date": "1939-10-30",
     "birth_city": "Los Angeles, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Fred Hutchinson Cancer Research Center",
     "organization_city": "Seattle, WA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10973,11 +10973,11 @@
     "name": "Eric A. Cornell",
     "birth_date": "1961-12-19",
     "birth_city": "Palo Alto, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Colorado, JILA",
     "organization_city": "Boulder, CO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -10992,7 +10992,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2001,
@@ -11003,11 +11003,11 @@
     "name": "Carl E. Wieman",
     "birth_date": "1951-03-26",
     "birth_city": "Corvallis, OR",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Colorado, JILA",
     "organization_city": "Boulder, CO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2002,
@@ -11018,11 +11018,11 @@
     "name": "John B. Fenn",
     "birth_date": "1917-06-15",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Virginia Commonwealth University",
     "organization_city": "Richmond, VA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2002,
@@ -11067,7 +11067,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2002,
@@ -11078,11 +11078,11 @@
     "name": "Vernon L. Smith",
     "birth_date": "1927-01-01",
     "birth_city": "Wichita, KS",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "George Mason University",
     "organization_city": "Fairfax, VA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2002,
@@ -11112,7 +11112,7 @@
     "sex": "Male",
     "organization_name": "The Molecular Sciences Institute",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2002,
@@ -11123,11 +11123,11 @@
     "name": "H. Robert Horvitz",
     "birth_date": "1947-05-08",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2002,
@@ -11153,7 +11153,7 @@
     "name": "Jimmy Carter",
     "birth_date": "1924-10-01",
     "birth_city": "Plains, GA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -11168,11 +11168,11 @@
     "name": "Raymond Davis Jr.",
     "birth_date": "1914-10-14",
     "birth_city": "Washington, DC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Pennsylvania",
     "organization_city": "Philadelphia, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2002,
@@ -11202,7 +11202,7 @@
     "sex": "Male",
     "organization_name": "Associated Universities Inc.",
     "organization_city": "Washington, DC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2003,
@@ -11213,11 +11213,11 @@
     "name": "Peter Agre",
     "birth_date": "1949-01-30",
     "birth_city": "Northfield, MN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Johns Hopkins University School of Medicine",
     "organization_city": "Baltimore, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2003,
@@ -11228,11 +11228,11 @@
     "name": "Roderick MacKinnon",
     "birth_date": "1956-02-19",
     "birth_city": "Burlington, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2003,
@@ -11243,11 +11243,11 @@
     "name": "Robert F. Engle III",
     "birth_date": "1942-11-10",
     "birth_city": "Syracuse, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "New York University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2003,
@@ -11262,7 +11262,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "San Diego, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2003,
@@ -11288,11 +11288,11 @@
     "name": "Paul C. Lauterbur",
     "birth_date": "1929-05-06",
     "birth_city": "Sidney, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Illinois",
     "organization_city": "Urbana, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2003,
@@ -11337,7 +11337,7 @@
     "sex": "Male",
     "organization_name": "Argonne National Laboratory",
     "organization_city": "Argonne, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2003,
@@ -11367,7 +11367,7 @@
     "sex": "Male",
     "organization_name": "University of Illinois",
     "organization_city": "Urbana, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11408,11 +11408,11 @@
     "name": "Irwin Rose",
     "birth_date": "1926-07-16",
     "birth_city": "Brooklyn, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Irvine, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11427,7 +11427,7 @@
     "sex": "Male",
     "organization_name": "Carnegie Mellon University",
     "organization_city": "Pittsburgh, PA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11438,11 +11438,11 @@
     "name": "Edward C. Prescott",
     "birth_date": "1940-12-26",
     "birth_city": "Glens Falls, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Arizona State University",
     "organization_city": "Tempe, AZ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11468,11 +11468,11 @@
     "name": "Richard Axel",
     "birth_date": "1946-07-02",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11483,11 +11483,11 @@
     "name": "Linda B. Buck",
     "birth_date": "1947-01-29",
     "birth_city": "Seattle, WA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "Fred Hutchinson Cancer Research Center",
     "organization_city": "Seattle, WA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11513,11 +11513,11 @@
     "name": "David J. Gross",
     "birth_date": "1941-02-19",
     "birth_city": "Washington, DC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California, Kavli Institute for Theoretical Physics",
     "organization_city": "Santa Barbara, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11528,11 +11528,11 @@
     "name": "H. David Politzer",
     "birth_date": "1949-08-31",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2004,
@@ -11543,11 +11543,11 @@
     "name": "Frank Wilczek",
     "birth_date": "1951-05-15",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2005,
@@ -11573,11 +11573,11 @@
     "name": "Robert H. Grubbs",
     "birth_date": "1942-02-27",
     "birth_city": "Possum Trot, KY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2005,
@@ -11588,11 +11588,11 @@
     "name": "Richard R. Schrock",
     "birth_date": "1945-01-04",
     "birth_city": "Berne, IN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2005,
@@ -11618,11 +11618,11 @@
     "name": "Thomas C. Schelling",
     "birth_date": "1921-04-14",
     "birth_city": "Oakland, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Maryland, Department of Economics and School of Public Policy",
     "organization_city": "College Park, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2005,
@@ -11708,11 +11708,11 @@
     "name": "Roy J. Glauber",
     "birth_date": "1925-09-01",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2005,
@@ -11723,11 +11723,11 @@
     "name": "John L. Hall",
     "birth_date": "1934-08-21",
     "birth_city": "Denver, CO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Colorado, JILA",
     "organization_city": "Boulder, CO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2005,
@@ -11753,11 +11753,11 @@
     "name": "Roger D. Kornberg",
     "birth_date": "1947-04-24",
     "birth_city": "St. Louis, MO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2006,
@@ -11768,11 +11768,11 @@
     "name": "Edmund S. Phelps",
     "birth_date": "1933-07-26",
     "birth_city": "Evanston, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2006,
@@ -11798,11 +11798,11 @@
     "name": "Andrew Z. Fire",
     "birth_date": "1959-04-27",
     "birth_city": "Stanford, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University School of Medicine",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2006,
@@ -11813,11 +11813,11 @@
     "name": "Craig C. Mello",
     "birth_date": "1960-10-19",
     "birth_city": "New Haven, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Massachusetts Medical School",
     "organization_city": "Worcester, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2006,
@@ -11858,11 +11858,11 @@
     "name": "John C. Mather",
     "birth_date": "1946-08-07",
     "birth_city": "Roanoke, VA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "NASA Goddard Space Flight Center",
     "organization_city": "Greenbelt, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2006,
@@ -11873,11 +11873,11 @@
     "name": "George F. Smoot",
     "birth_date": "1945-02-20",
     "birth_city": "Yukon, FL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2007,
@@ -11907,7 +11907,7 @@
     "sex": "Male",
     "organization_name": "University of Minnesota",
     "organization_city": "Minneapolis, MN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2007,
@@ -11918,11 +11918,11 @@
     "name": "Eric S. Maskin",
     "birth_date": "1950-12-12",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Institute for Advanced Study",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2007,
@@ -11933,11 +11933,11 @@
     "name": "Roger B. Myerson",
     "birth_date": "1951-03-29",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2007,
@@ -11967,7 +11967,7 @@
     "sex": "Male",
     "organization_name": "University of Utah",
     "organization_city": "Salt Lake City, UT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2007,
@@ -11997,7 +11997,7 @@
     "sex": "Male",
     "organization_name": "University of North Carolina",
     "organization_city": "Chapel Hill, NC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2007,
@@ -12023,7 +12023,7 @@
     "name": "Albert Arnold (Al) Gore Jr.",
     "birth_date": "1948-03-31",
     "birth_city": "Washington, DC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -12072,7 +12072,7 @@
     "sex": "Male",
     "organization_name": "Marine Biological Laboratory (MBL)",
     "organization_city": "Woods Hole, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2008,
@@ -12083,11 +12083,11 @@
     "name": "Martin Chalfie",
     "birth_date": "1947-01-15",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2008,
@@ -12098,11 +12098,11 @@
     "name": "Roger Y. Tsien",
     "birth_date": "1952-02-01",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "San Diego, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2008,
@@ -12113,11 +12113,11 @@
     "name": "Paul Krugman",
     "birth_date": "1953-02-28",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2008,
@@ -12207,7 +12207,7 @@
     "sex": "Male",
     "organization_name": "Enrico Fermi Institute, University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2008,
@@ -12263,11 +12263,11 @@
     "name": "Thomas A. Steitz",
     "birth_date": "1940-08-23",
     "birth_city": "Milwaukee, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2009,
@@ -12293,11 +12293,11 @@
     "name": "Elinor Ostrom",
     "birth_date": "1933-08-07",
     "birth_city": "Los Angeles, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "Indiana University",
     "organization_city": "Bloomington, IN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2009,
@@ -12308,11 +12308,11 @@
     "name": "Oliver E. Williamson",
     "birth_date": "1932-09-27",
     "birth_city": "Superior, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2009,
@@ -12342,7 +12342,7 @@
     "sex": "Female",
     "organization_name": "University of California",
     "organization_city": "San Francisco, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2009,
@@ -12353,11 +12353,11 @@
     "name": "Carol W. Greider",
     "birth_date": "1961-04-15",
     "birth_city": "San Diego, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "Johns Hopkins University School of Medicine",
     "organization_city": "Baltimore, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2009,
@@ -12372,7 +12372,7 @@
     "sex": "Male",
     "organization_name": "Harvard Medical School",
     "organization_city": "Boston, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2009,
@@ -12383,7 +12383,7 @@
     "name": "Barack H. Obama",
     "birth_date": "1961-08-04",
     "birth_city": "Honolulu, HI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -12417,7 +12417,7 @@
     "sex": "Male",
     "organization_name": "Bell Laboratories",
     "organization_city": "Murray Hill, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2009,
@@ -12428,11 +12428,11 @@
     "name": "George E. Smith",
     "birth_date": "1930-05-10",
     "birth_city": "White Plains, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Bell Laboratories",
     "organization_city": "Murray Hill, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2010,
@@ -12443,11 +12443,11 @@
     "name": "Richard F. Heck",
     "birth_date": "1931-08-15",
     "birth_city": "Springfield, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Delaware",
     "organization_city": "",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2010,
@@ -12462,7 +12462,7 @@
     "sex": "Male",
     "organization_name": "Purdue University",
     "organization_city": "West Lafayette, IN",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2010,
@@ -12488,11 +12488,11 @@
     "name": "Peter A. Diamond",
     "birth_date": "1940-04-29",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2010,
@@ -12503,11 +12503,11 @@
     "name": "Dale T. Mortensen",
     "birth_date": "1939-02-02",
     "birth_city": "Enterprise, OR",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Northwestern University",
     "organization_city": "Evanston, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2010,
@@ -12623,11 +12623,11 @@
     "name": "Thomas J. Sargent",
     "birth_date": "1943-07-19",
     "birth_city": "Pasadena, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "New York University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2011,
@@ -12638,11 +12638,11 @@
     "name": "Christopher A. Sims",
     "birth_date": "1942-10-21",
     "birth_city": "Washington, DC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2011,
@@ -12668,11 +12668,11 @@
     "name": "Bruce A. Beutler",
     "birth_date": "1957-12-29",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Texas Southwestern Medical Center at Dallas",
     "organization_city": "Dallas, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2011,
@@ -12702,7 +12702,7 @@
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2011,
@@ -12758,11 +12758,11 @@
     "name": "Saul Perlmutter",
     "birth_date": "",
     "birth_city": "Champaign-Urbana, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Lawrence Berkeley National Laboratory",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2011,
@@ -12773,7 +12773,7 @@
     "name": "Brian P. Schmidt",
     "birth_date": "1967-02-24",
     "birth_city": "Missoula, MT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Australian National University",
     "organization_city": "Weston Creek",
@@ -12788,11 +12788,11 @@
     "name": "Adam G. Riess",
     "birth_date": "1969-12-16",
     "birth_city": "Washington, DC",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Johns Hopkins University",
     "organization_city": "Baltimore, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2012,
@@ -12803,7 +12803,7 @@
     "name": "Robert J. Lefkowitz",
     "birth_date": "1943-04-15",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Howard Hughes Medical Institute",
     "organization_city": "",
@@ -12818,11 +12818,11 @@
     "name": "Brian K. Kobilka",
     "birth_date": "1955-05-30",
     "birth_city": "Little Falls, MN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University School of Medicine",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2012,
@@ -12833,11 +12833,11 @@
     "name": "Alvin E. Roth",
     "birth_date": "1951-12-18",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2012,
@@ -12848,11 +12848,11 @@
     "name": "Lloyd S. Shapley",
     "birth_date": "1923-06-02",
     "birth_city": "Cambridge, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2012,
@@ -12938,11 +12938,11 @@
     "name": "David J. Wineland",
     "birth_date": "1944-02-24",
     "birth_city": "Milwaukee, WI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institute of Standards and Technology",
     "organization_city": "Boulder, CO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -12972,7 +12972,7 @@
     "sex": "Male",
     "organization_name": "Stanford University School of Medicine",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -12987,7 +12987,7 @@
     "sex": "Male",
     "organization_name": "University of Southern California",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -12998,11 +12998,11 @@
     "name": "Eugene F. Fama",
     "birth_date": "1939-02-14",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -13013,11 +13013,11 @@
     "name": "Lars Peter Hansen",
     "birth_date": "1952-10-26",
     "birth_city": "Urbana, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -13028,11 +13028,11 @@
     "name": "Robert J. Shiller",
     "birth_date": "1946-03-29",
     "birth_city": "Detroit, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -13058,11 +13058,11 @@
     "name": "James E. Rothman",
     "birth_date": "1950-11-03",
     "birth_city": "Haverhill, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -13073,11 +13073,11 @@
     "name": "Randy W. Schekman",
     "birth_date": "1948-12-30",
     "birth_city": "St. Paul, MN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -13092,7 +13092,7 @@
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2013,
@@ -13148,11 +13148,11 @@
     "name": "Eric Betzig",
     "birth_date": "1960-01-13",
     "birth_city": "Ann Arbor, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Janelia Research Campus, Howard Hughes Medical Institute",
     "organization_city": "Ashburn, VA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2014,
@@ -13178,11 +13178,11 @@
     "name": "William E. Moerner",
     "birth_date": "1953-06-24",
     "birth_city": "Pleasanton, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2014,
@@ -13223,7 +13223,7 @@
     "name": "John O'Keefe",
     "birth_date": "1939-11-18",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University College",
     "organization_city": "London",
@@ -13332,7 +13332,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Santa Barbara, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2015,
@@ -13358,11 +13358,11 @@
     "name": "Paul Modrich",
     "birth_date": "1946-06-13",
     "birth_city": "Raton, NM",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Howard Hughes Medical Institute",
     "organization_city": "Durham, NC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2015,
@@ -13377,7 +13377,7 @@
     "sex": "Male",
     "organization_name": "University of North Carolina",
     "organization_city": "Chapel Hill, NC",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2015,
@@ -13392,7 +13392,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2015,
@@ -13422,7 +13422,7 @@
     "sex": "Male",
     "organization_name": "Drew University",
     "organization_city": "Madison, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2015,
@@ -13527,7 +13527,7 @@
     "sex": "Male",
     "organization_name": "Northwestern University",
     "organization_city": "Evanston, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2016,
@@ -13557,7 +13557,7 @@
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2016,
@@ -13572,7 +13572,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2016,
@@ -13583,7 +13583,7 @@
     "name": "Bob Dylan",
     "birth_date": "1941-05-24",
     "birth_city": "Duluth, MN",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "",
     "organization_city": "",
@@ -13632,7 +13632,7 @@
     "sex": "Male",
     "organization_name": "University of Washington",
     "organization_city": "Seattle, WA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2016,
@@ -13647,7 +13647,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2016,
@@ -13662,7 +13662,7 @@
     "sex": "Male",
     "organization_name": "Brown University",
     "organization_city": "Providence, RI",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13692,7 +13692,7 @@
     "sex": "Male",
     "organization_name": "Columbia University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13703,7 +13703,7 @@
     "name": "Richard Henderson",
     "birth_date": "1945-07-19",
     "birth_city": "Edinburgh",
-    "birth_country": "Scotland",
+    "birth_country": "United Kingdom",
     "sex": "Male",
     "organization_name": "MRC Laboratory of Molecular Biology",
     "organization_city": "Cambridge",
@@ -13718,11 +13718,11 @@
     "name": "Richard H. Thaler",
     "birth_date": "1945-09-12",
     "birth_city": "East Orange, NJ",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13748,11 +13748,11 @@
     "name": "Jeffrey C. Hall",
     "birth_date": "1945-05-03",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Maine",
     "organization_city": "Maine, ME",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13763,11 +13763,11 @@
     "name": "Michael Rosbash",
     "birth_date": "1944-03-07",
     "birth_city": "Kansas City, MO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Brandeis University",
     "organization_city": "Waltham, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13778,11 +13778,11 @@
     "name": "Michael W. Young",
     "birth_date": "1949-03-28",
     "birth_city": "Miami, FL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13812,7 +13812,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13823,11 +13823,11 @@
     "name": "Barry C. Barish",
     "birth_date": "1936-01-27",
     "birth_city": "Omaha, NE",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2017,
@@ -13838,11 +13838,11 @@
     "name": "Kip S. Thorne",
     "birth_date": "1940-06-01",
     "birth_city": "Logan, UT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -13853,11 +13853,11 @@
     "name": "Frances H. Arnold",
     "birth_date": "1956-07-25",
     "birth_city": "Pittsburgh, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "California Institute of Technology (Caltech)",
     "organization_city": "Pasadena, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -13868,11 +13868,11 @@
     "name": "George P. Smith",
     "birth_date": "1941-03-10",
     "birth_city": "Norwalk, CT",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Missouri",
     "organization_city": "Columbia, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -13898,11 +13898,11 @@
     "name": "William D. Nordhaus",
     "birth_date": "1941-05-31",
     "birth_city": "Albuquerque, NM",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Yale University",
     "organization_city": "New Haven, CT",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -13913,11 +13913,11 @@
     "name": "Paul M. Romer",
     "birth_date": 1955,
     "birth_city": "Denver, CO",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "NYU Stern School of Business",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -13943,11 +13943,11 @@
     "name": "James P. Allison",
     "birth_date": "1948-08-07",
     "birth_city": "Alice, TX",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Texas MD Anderson Cancer Center",
     "organization_city": "Houston, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -14003,11 +14003,11 @@
     "name": "Arthur Ashkin",
     "birth_date": "1922-09-02",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Bell Laboratories",
     "organization_city": "Holmdel, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -14022,7 +14022,7 @@
     "sex": "Male",
     "organization_name": "University of Michigan",
     "organization_city": "Ann Arbor, MI",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2018,
@@ -14052,7 +14052,7 @@
     "sex": "Male",
     "organization_name": "University of Texas",
     "organization_city": "Austin, TX",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14067,7 +14067,7 @@
     "sex": "Male",
     "organization_name": "Binghamton University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14097,7 +14097,7 @@
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14112,7 +14112,7 @@
     "sex": "Female",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14123,11 +14123,11 @@
     "name": "Michael Kremer",
     "birth_date": "1964-11-12",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Harvard University",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14153,11 +14153,11 @@
     "name": "William G. Kaelin Jr",
     "birth_date": "1957-11-23",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Howard Hughes Medical Institute",
     "organization_city": "Chevy Chase, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14183,11 +14183,11 @@
     "name": "Gregg L. Semenza",
     "birth_date": "1956-07-12",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Johns Hopkins University",
     "organization_city": "Baltimore, MD",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14217,7 +14217,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2019,
@@ -14288,11 +14288,11 @@
     "name": "Andrea Ghez",
     "birth_date": "1965-06-16",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "University of California",
     "organization_city": "Los Angeles, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2020,
@@ -14318,11 +14318,11 @@
     "name": "Jennifer A. Doudna",
     "birth_date": "1964-02-19",
     "birth_city": "Washington, D.C.",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2020,
@@ -14333,11 +14333,11 @@
     "name": "Harvey J. Alter",
     "birth_date": "1935-10-12",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "National Institutes of Health",
     "organization_city": "Bethesda",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2020,
@@ -14363,11 +14363,11 @@
     "name": "Charles M. Rice",
     "birth_date": "1952-08-25",
     "birth_city": "Sacramento, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Rockefeller University",
     "organization_city": "New York, NY",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2020,
@@ -14378,11 +14378,11 @@
     "name": "Louise Glück",
     "birth_date": "1943-04-22",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2020,
@@ -14408,11 +14408,11 @@
     "name": "Paul R. Milgrom",
     "birth_date": "1948-04-20",
     "birth_city": "Detroit, MI",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2020,
@@ -14423,11 +14423,11 @@
     "name": "Robert B. Wilson",
     "birth_date": "1937-05-16",
     "birth_city": "Geneva, NE",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2021,
@@ -14442,7 +14442,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2021,
@@ -14502,7 +14502,7 @@
     "sex": "Male",
     "organization_name": "Princeton University",
     "organization_city": "Princeton, NJ",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2021,
@@ -14513,11 +14513,11 @@
     "name": "David Julius",
     "birth_date": "1955-11-04",
     "birth_city": "New York, NY",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "San Francisco, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2021,
@@ -14532,7 +14532,7 @@
     "sex": "Male",
     "organization_name": "Scripps Research",
     "organization_city": "La Jolla, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2021,
@@ -14592,7 +14592,7 @@
     "sex": "Male",
     "organization_name": "University of California",
     "organization_city": "Berkeley, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2021,
@@ -14603,11 +14603,11 @@
     "name": "Joshua D. Angrist",
     "birth_date": "1960-09-18",
     "birth_city": "Columbus, OH",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Massachusetts Institute of Technology (MIT)",
     "organization_city": "Cambridge, MA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2021,
@@ -14622,7 +14622,7 @@
     "sex": "Male",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2022,
@@ -14648,11 +14648,11 @@
     "name": "John F. Clauser",
     "birth_date": "1942-12-01",
     "birth_city": "Pasadena, CA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "J.F. Clauser & Assoc.",
     "organization_city": "Walnut Creek, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2022,
@@ -14678,11 +14678,11 @@
     "name": "Carolyn R. Bertozzi",
     "birth_date": "1966-10-10",
     "birth_city": "Boston, MA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Female",
     "organization_name": "Stanford University",
     "organization_city": "Stanford, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2022,
@@ -14708,11 +14708,11 @@
     "name": "K. Barry Sharpless",
     "birth_date": "1941-04-28",
     "birth_city": "Philadelphia, PA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Scripps Research",
     "organization_city": "La Jolla, CA",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2022,
@@ -14798,11 +14798,11 @@
     "name": "Ben S. Bernanke",
     "birth_date": "1953-12-13",
     "birth_city": "Augusta, GA",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "The Brookings Institution",
     "organization_city": "Washington, D.C.",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2022,
@@ -14813,11 +14813,11 @@
     "name": "Douglas W. Diamond",
     "birth_date": "1953-10-25",
     "birth_city": "Chicago, IL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "University of Chicago",
     "organization_city": "Chicago, IL",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   },
   {
     "year": 2022,
@@ -14828,10 +14828,10 @@
     "name": "Philip H. Dybvig",
     "birth_date": "1955-05-22",
     "birth_city": "Gainesville, FL",
-    "birth_country": "United States of America",
+    "birth_country": "United States",
     "sex": "Male",
     "organization_name": "Washington University",
     "organization_city": "St. Louis, MO",
-    "organization_country": "United States of America"
+    "organization_country": "United States"
   }
 ]

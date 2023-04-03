@@ -10,12 +10,12 @@ html {
 }
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: #f8fcff;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 400;
-  color: #242424;
+  color: #09131b;
 }
 .container {
   margin-right: auto;
@@ -73,7 +73,7 @@ h1 {
   font-size: 6rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #BB8A35;
+  color: #E3B505;
 }
 h2 {
   margin: 30px 0 15px;

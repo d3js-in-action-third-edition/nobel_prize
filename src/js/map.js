@@ -1,19 +1,18 @@
 import { select } from "d3-selection";
 import { geoEqualEarth, geoPath } from "d3-geo";
+import { transition } from "d3-transition";
+import { getCountryColor } from "./scales";
 
 export const drawMap = (laureates, countries) => {
-
-  console.log(countries.features.find(c => c.properties.name.includes("Taiwan")))
 
   // Perform calculations
   laureates.forEach(laureate => {
     if (laureate.birth_country !== "") {
-      console.log(laureate.birth_country);
       const country =  countries.features.find(f => f.properties.name === laureate.birth_country);
-      if (country.laureates) {
-        country.laureates.push(laureate);
+      if (country.properties.laureates) {
+        country.properties.laureates.push(laureate);
       } else {
-        country["laureates"] = [laureate];
+        country.properties["laureates"] = [laureate];
       }
     }
   });
@@ -36,12 +35,28 @@ export const drawMap = (laureates, countries) => {
   const geoPathGenerator = geoPath()
     .projection(projection);
 
-  // Append country paths
+  // Append country fills
   svg
     .selectAll(".path-mercator")
     .data(countries.features)
     .join("path")
       .attr("class", "countries path-mercator")
-      .attr("d", geoPathGenerator);
+      .attr("d", geoPathGenerator)
+      .attr("fill", d =>  d.properties.laureates
+        ? getCountryColor(d.properties.laureates.length)
+        : "#f8fcff")
+      .attr("stroke", "#242424")
+      .attr("stroke-opacity", 0.5)
+      .on("mouseenter", (e, d) => {
+        select("#map-tooltip")
+          .text(`${d.properties.name}, ${d.properties.laureates ? d.properties.laureates.length : 0} laureates`)
+          .transition()
+          .style("opacity", 1);
+      })
+      .on("mouseleave", () => {
+        select("#map-tooltip")
+          .transition()
+          .style("opacity", 0);
+      });
 
 };

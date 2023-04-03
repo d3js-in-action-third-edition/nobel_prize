@@ -1,3 +1,24 @@
+.legend-countries-colors {
+  height: 50px;
+  background: linear-gradient(90deg, #ffffd9 0%, #4cb7c1 50%, #091e5a 100%);
+  border-radius: 3px;
+}
 
+.legend-countries-labels {
+  justify-content: space-between;
+  display: flex;
+}
+
+.map-container {
+  position: relative;
+}
+
+#map-tooltip {
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+}
 
 /*# sourceMappingURL=index.2fd0c333.css.map */

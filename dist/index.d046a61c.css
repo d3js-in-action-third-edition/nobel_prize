@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  color: #242424;
-  background-color: #fff;
+  color: #09131b;
+  background-color: #f8fcff;
   margin: 0;
   font-family: Open Sans, sans-serif;
   font-size: 1.8rem;
@@ -79,7 +79,7 @@ h1, h2 {
 
 h1 {
   text-transform: uppercase;
-  color: #bb8a35;
+  color: #e3b505;
   margin: 150px 0 0;
   font-size: 6rem;
   font-weight: 600;

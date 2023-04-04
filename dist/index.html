@@ -13,33 +13,43 @@
 		<div class="tagline">Observations on the laureates' origins.</div>
 		<div class="intro">Add intro here</div>
 
-		<h2>Select a map</h2>
-		<div>
-			<div>
-				<input type="radio" id="countries" value="countries" name="map-type" checked="">
-				<label for="countries">Laureates' countries</label>
-			</div>
-			<div>
-				<input type="radio" id="cities" value="cities" name="map-type">
-				<label for="cities">Laureates' cities</label>
-			</div>
-		</div>
-		<div class="legend-countainer">
-			<h2>Number of laureates</h2>
-			<div class="legend-countries">
-				<div class="legend-countries-colors"></div>
-				<div class="legend-countries-labels">
-					<span>1</span>
-					<span>100+</span>
+		<div class="filters-container">
+			<div class="map-filter-container">
+				<h2>Select a map</h2>
+				<div>
+					<div>
+						<input type="radio" id="countries" value="countries" name="map-type" checked="">
+						<label for="countries">Laureates' countries</label>
+					</div>
+					<div>
+						<input type="radio" id="cities" value="cities" name="map-type">
+						<label for="cities">Laureates' cities</label>
+					</div>
 				</div>
 			</div>
-			<div class="legend-cities"></div>
 		</div>
 
-		<div class="map-container">
-			<div id="map"></div>
-			<div id="map-tooltip"></div>
-			<button id="map-reset" type="button">Reset map</button>
+		<div class="row">
+			<div class="col col-1">
+				<div class="legend-container">
+					<h3>Number of laureates</h3>
+					<div class="legend-countries">
+						<div class="legend-countries-colors"></div>
+						<div class="legend-countries-labels">
+							<span>1</span>
+							<span>100+</span>
+						</div>
+					</div>
+					<div class="legend-cities"></div>
+				</div>
+			</div>
+			<div class="col col-10">
+				<div class="map-container">
+					<div id="map"></div>
+					<div id="map-tooltip"></div>
+					<button id="map-reset" type="button">Reset map</button>
+				</div>
+			</div>
 		</div>
 
 		<div class="notes">

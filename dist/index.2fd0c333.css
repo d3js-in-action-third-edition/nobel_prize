@@ -1,15 +1,18 @@
-.legend-countries, .legend-cities {
-  height: 80px;
+.legend-countries {
+  display: flex;
 }
 
 .legend-countries-colors {
-  height: 50px;
-  background: linear-gradient(90deg, #ffffd9 0%, #4cb7c1 50%, #091e5a 100%);
+  width: 40px;
+  height: 500px;
+  background: linear-gradient(#ffffd9 0%, #4cb7c1 50%, #091e5a 100%);
   border-radius: 3px;
 }
 
 .legend-countries-labels {
+  flex-direction: column;
   justify-content: space-between;
+  margin-left: 5px;
   display: flex;
 }
 
@@ -17,6 +20,10 @@
   border: 1px solid #09131b;
   position: relative;
   overflow: hidden;
+}
+
+.filters-container {
+  margin-bottom: 30px;
 }
 
 #map-tooltip {

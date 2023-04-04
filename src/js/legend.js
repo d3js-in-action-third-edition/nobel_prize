@@ -34,7 +34,7 @@ export const drawLegend = (laureatesMax) => {
       .attr("cy", 2*maxRadius - minRadius)
       .attr("r", minRadius);
 
-  const linesLength = 100;
+  const linesLength = 50;
   const legendLines = legendLaureates
     .append("g")
       .attr("stroke", "#09131b")

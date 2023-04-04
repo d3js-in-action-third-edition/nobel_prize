@@ -1,16 +1,18 @@
-/* Countries color legend */
-.legend-countries,
-.legend-cities {
-  height: 80px;
+/* Legend */
+.legend-countries {
+  display: flex;
 }
 .legend-countries-colors {
-  height: 50px;
-  background: linear-gradient(90deg, rgba(255,255,217,1) 0%, rgba(76,183,193,1) 50%, rgba(9,30,90,1) 100%);
+  width: 40px;
+  height: 500px;
+  background: linear-gradient(180deg, rgba(255,255,217,1) 0%, rgba(76,183,193,1) 50%, rgba(9,30,90,1) 100%);
   border-radius: 3px;
 }
 .legend-countries-labels {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin-left: 5px;
 }
 
 /* Map container */
@@ -18,6 +20,11 @@
   position: relative;
   overflow: hidden;
   border: 1px solid #09131b;
+}
+
+/* Filters */
+.filters-container {
+  margin-bottom: 30px;
 }
 
 /* Tooltip */

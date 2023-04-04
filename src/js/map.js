@@ -146,7 +146,7 @@ export const drawMap = (laureates, countries) => {
     select(".legend-cities")
       .style("display", "none");
     select(".legend-countries")
-      .style("display", "block");
+      .style("display", "flex");
 
   };
 
@@ -228,8 +228,6 @@ export const drawMap = (laureates, countries) => {
   select("#map-reset")
     .attr("class", "hidden")
     .on("click", () => {
-      select("#map-reset")
-        .classed("hidden", true);
       select(".map-container")
         .transition()
         .call(zoomHandler.transform, zoomIdentity);

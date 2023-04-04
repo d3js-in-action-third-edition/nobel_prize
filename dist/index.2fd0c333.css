@@ -1,3 +1,7 @@
+.legend-countries, .legend-cities {
+  height: 80px;
+}
+
 .legend-countries-colors {
   height: 50px;
   background: linear-gradient(90deg, #ffffd9 0%, #4cb7c1 50%, #091e5a 100%);

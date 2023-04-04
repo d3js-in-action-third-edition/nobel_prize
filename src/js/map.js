@@ -3,7 +3,7 @@ import { geoEqualEarth, geoPath, geoGraticule } from "d3-geo";
 import { transition } from "d3-transition";
 import { max } from "d3-array";
 import { countryColorScale, getCityRadius } from "./scales";
-import cities from "../data/cities.json";
+import { drawLegend } from "./legend";
 
 export const drawMap = (laureates, countries) => {
 
@@ -34,6 +34,7 @@ export const drawMap = (laureates, countries) => {
   });
   console.log("birthCities", birthCities);
   const maxLaureatesPerCity = max(birthCities, d => d.laureates.length);
+  drawLegend(maxLaureatesPerCity);
   // console.log(cities)
   // laureates.forEach(laureate => {
   //   if (laureate.birth_country !== "" && laureate.birth_city !== "") {
@@ -87,7 +88,7 @@ export const drawMap = (laureates, countries) => {
   const graticules = svg
     .append("g")
       .attr("fill", "transparent")
-      .attr("stroke", "#242424")
+      .attr("stroke", "#09131b")
       .attr("stroke-opacity", 0.2)
   graticules
     .append("path")
@@ -108,12 +109,19 @@ export const drawMap = (laureates, countries) => {
       .attr("class", "countries path-mercator")
       .attr("d", geoPathGenerator)
       .attr("fill", "#f8fcff")
-      .attr("stroke", "#242424")
-      .attr("stroke-opacity", 0.5)
+      .attr("stroke", "#09131b")
+      .attr("stroke-opacity", 0.4)
       
 
   // Display laureates' countries
   const displayCountries = () => {
+
+    // Remove city circles
+    selectAll(".circle-city")
+      .transition()
+      .attr("fill-opacity", 0)
+      .attr("stroke-opacity", 0)
+      .remove();
 
     // Color birth countries
     selectAll(".path-mercator")
@@ -132,6 +140,13 @@ export const drawMap = (laureates, countries) => {
       .attr("fill", d =>  d.properties.laureates
         ? countryColorScale(d.properties.laureates.length)
         : "#f8fcff");
+
+    // Show related legend
+    select(".legend-cities")
+      .style("display", "none");
+    select(".legend-countries")
+      .style("display", "block");
+
   };
 
   const displayCities = () => {
@@ -152,9 +167,30 @@ export const drawMap = (laureates, countries) => {
         .attr("cx", d => projection([d.longitude, d.latitude])[0])
         .attr("cy", d => projection([d.longitude, d.latitude])[1])
         .attr("r", d => getCityRadius(d.laureates.length, maxLaureatesPerCity))
-        .attr("fill", "#4cb7c1")
-        .attr("fill-opacity", 0.4)
-        .attr("stroke", "#4cb7c1");
+        .attr("fill", "#35a7c2")
+        .attr("fill-opacity", 0)
+        .attr("stroke", "#35a7c2")
+        .attr("stroke-opacity", 0)
+        .on("mouseenter", (e, d) => {
+          select("#map-tooltip")
+            .text(`${d.city}, ${d.laureates.length} laureates`)
+            .transition()
+            .style("opacity", 1);
+        })
+        .on("mouseleave", () => {
+          select("#map-tooltip")
+            .transition()
+            .style("opacity", 0);
+        })
+        .transition()
+        .attr("fill-opacity", 0.5)
+        .attr("stroke-opacity", 1);
+
+    // Show related legend
+    select(".legend-countries")
+      .style("display", "none");
+    select(".legend-cities")
+      .style("display", "block");
     
   };
 

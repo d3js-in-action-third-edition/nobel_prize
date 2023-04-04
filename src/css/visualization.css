@@ -1,4 +1,8 @@
 /* Countries color legend */
+.legend-countries,
+.legend-cities {
+  height: 80px;
+}
 .legend-countries-colors {
   height: 50px;
   background: linear-gradient(90deg, rgba(255,255,217,1) 0%, rgba(76,183,193,1) 50%, rgba(9,30,90,1) 100%);

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel src/index.html",
-    "predeploy": "rm -rf dist && parcel build src/index.html --public-url 'https://d3js-in-action-third-edition.github.io/romeo-and-juliet/'",
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url 'https://d3js-in-action-third-edition.github.io/nobel_prize/'",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

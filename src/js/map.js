@@ -2,6 +2,7 @@ import { select, selectAll } from "d3-selection";
 import { geoEqualEarth, geoPath, geoGraticule } from "d3-geo";
 import { transition } from "d3-transition";
 import { max } from "d3-array";
+import { zoom, zoomIdentity } from "d3-zoom";
 import { countryColorScale, getCityRadius } from "./scales";
 import { drawLegend } from "./legend";
 
@@ -206,5 +207,32 @@ export const drawMap = (laureates, countries) => {
 
   // On project load, display countries
   displayCountries();
+
+  // Handle zoom
+  const zoomHandler = zoom()
+    .scaleExtent([1, 5])
+    .translateExtent([[-width/2, -height/2], [3*width/2, 3*height/2]])
+    .on("zoom", (e) => {
+      console.log(e);
+      svg
+        .attr("transform", e.transform);
+
+      if (select("#map-reset").classed("hidden")) {
+        select("#map-reset")
+          .classed("hidden", false);
+      }
+    });
+  select(".map-container")
+    .call(zoomHandler);
+
+  select("#map-reset")
+    .attr("class", "hidden")
+    .on("click", () => {
+      select("#map-reset")
+        .classed("hidden", true);
+      select(".map-container")
+        .transition()
+        .call(zoomHandler.transform, zoomIdentity);
+    });
 
 };

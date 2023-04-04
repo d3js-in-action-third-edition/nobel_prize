@@ -16,6 +16,22 @@
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .legend-countries {
+    flex-direction: column;
+  }
+
+  .legend-countries-colors {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(90deg, #ffffd9 0%, #4cb7c1 50%, #091e5a 100%);
+  }
+
+  .legend-countries-labels {
+    flex-direction: row;
+  }
+}
+
 .map-container {
   border: 1px solid #09131b;
   position: relative;
@@ -57,6 +73,14 @@
 
 #map-reset:hover, #map-reset:focus {
   background-color: #207ab5;
+}
+
+@media screen and (max-width: 768px) {
+  #map-reset {
+    padding: 0 10px;
+    top: 0;
+    right: 0;
+  }
 }
 
 .axis-x text {

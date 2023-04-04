@@ -14,6 +14,19 @@
   justify-content: space-between;
   margin-left: 5px;
 }
+@media screen and (max-width: 768px) {
+  .legend-countries {
+    flex-direction: column;
+  }
+  .legend-countries-colors {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(255,255,217,1) 0%, rgba(76,183,193,1) 50%, rgba(9,30,90,1) 100%);
+  }
+  .legend-countries-labels {
+    flex-direction: row;
+  }
+}
 
 /* Map container */
 .map-container {
@@ -59,6 +72,13 @@
 #map-reset:hover,
 #map-reset:focus {
   background-color: #207ab5;
+}
+@media screen and (max-width: 768px) {
+  #map-reset {
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+  }
 }
 
 /* Years selector */

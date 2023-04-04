@@ -15,8 +15,8 @@
 }
 #map-tooltip {
   position: absolute;
-  bottom: 100px;
+  top: 0;
   right: 0;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }

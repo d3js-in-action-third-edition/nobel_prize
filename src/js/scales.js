@@ -1,9 +1,13 @@
-import { scaleSequential } from "d3-scale";
+import { scaleSequential, scaleRadial } from "d3-scale";
 import { interpolateYlGnBu } from "d3-scale-chromatic";
 
-export const getCountryColor = (numLaureates) => {
-  const countryColorScale = scaleSequential(interpolateYlGnBu)
-    .domain([0, 100])
+export const countryColorScale = scaleSequential(interpolateYlGnBu)
+  .domain([0, 100]);
 
-  return countryColorScale(numLaureates);
+export const getCityRadius = (numLaureates, maxLaureates) => {
+  const cityRadiusScale = scaleRadial()
+    .domain([0, maxLaureates])
+    .range([0, 25]);
+
+  return cityRadiusScale(numLaureates);
 };

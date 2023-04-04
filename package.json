@@ -19,9 +19,7 @@
     "d3-transition": "^3.0.1",
     "d3-zoom": "^3.0.0",
     "gh-pages": "^5.0.0",
-    "parcel": "^2.8.3"
-  },
-  "devDependencies": {
-    "parcel-transformer-geojson": "^0.0.4"
+    "parcel": "^2.8.3",
+    "topojson": "^3.0.2"
   }
 }

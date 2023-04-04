@@ -10,7 +10,7 @@ import { brushX } from "d3-brush";
 import { countryColorScale, getCityRadius } from "./scales";
 import { drawLegend } from "./legend";
 
-export const drawMap = (laureates, countries) => {
+export const drawWorldMap = (laureates, countries) => {
 
   // Perform calculations
   const birthCities = [];

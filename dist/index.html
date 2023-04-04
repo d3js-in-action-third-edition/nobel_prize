@@ -14,16 +14,26 @@
 		<div class="intro">Add intro here</div>
 
 		<div class="filters-container">
-			<div class="map-filter-container">
-				<h2>Select a map</h2>
-				<div>
-					<div>
-						<input type="radio" id="countries" value="countries" name="map-type" checked="">
-						<label for="countries">Laureates' countries</label>
+			<div class="row">
+				<div class="col col-3">
+					<div class="map-filter-container">
+						<h2>Select a map</h2>
+						<div>
+							<div>
+								<input type="radio" id="countries" value="countries" name="map-type" checked="">
+								<label for="countries">Laureates' countries</label>
+							</div>
+							<div>
+								<input type="radio" id="cities" value="cities" name="map-type">
+								<label for="cities">Laureates' cities</label>
+							</div>
+						</div>
 					</div>
-					<div>
-						<input type="radio" id="cities" value="cities" name="map-type">
-						<label for="cities">Laureates' cities</label>
+				</div>
+				<div class="col col-9">
+					<div class="map-filter-container">
+						<h2>Select a year range</h2>
+						<div id="years-selector"></div>
 					</div>
 				</div>
 			</div>
@@ -47,7 +57,7 @@
 				<div class="map-container">
 					<div id="map"></div>
 					<div id="map-tooltip"></div>
-					<button id="map-reset" type="button">Reset map</button>
+					<button id="map-reset" type="button">Reset zoom</button>
 				</div>
 			</div>
 		</div>

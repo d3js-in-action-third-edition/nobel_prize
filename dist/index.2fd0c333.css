@@ -59,4 +59,15 @@
   background-color: #207ab5;
 }
 
+.axis-x text {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.6rem;
+}
+
+.selection {
+  fill: #35a7c2;
+  fill-opacity: .3;
+  stroke: none;
+}
+
 /*# sourceMappingURL=index.2fd0c333.css.map */

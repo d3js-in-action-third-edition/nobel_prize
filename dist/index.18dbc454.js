@@ -576,6 +576,10 @@ var _d3Geo = require("d3-geo");
 var _d3Transition = require("d3-transition");
 var _d3Array = require("d3-array");
 var _d3Zoom = require("d3-zoom");
+var _d3Scale = require("d3-scale");
+var _d3Axis = require("d3-axis");
+var _d3Format = require("d3-format");
+var _d3Brush = require("d3-brush");
 var _scales = require("./scales");
 var _legend = require("./legend");
 const drawMap = (laureates, countries)=>{
@@ -603,39 +607,17 @@ const drawMap = (laureates, countries)=>{
     console.log("birthCities", birthCities);
     const maxLaureatesPerCity = (0, _d3Array.max)(birthCities, (d)=>d.laureates.length);
     (0, _legend.drawLegend)(maxLaureatesPerCity);
-    // console.log(cities)
-    // laureates.forEach(laureate => {
-    //   if (laureate.birth_country !== "" && laureate.birth_city !== "") {
-    //     const city = cities.find(c => c.name === laureate.birth_city && c.country === laureate.birth_country_code);
-    //     laureate["birt_city_latitude"] = city.lat;
-    //     laureate["birt_city_longitude"] = city.lng;
-    //   }
-    // });
-    // const key = "1yBIkguJRyW3ydYPlTE3Gg==g5W0pQxghNrKpRqI";
-    // async function fetchData(city, country) {
-    //   const url = 'https://api.api-ninjas.com/v1/geocoding?city=' + city + '&country=' + country;
-    //   const response = await fetch(url, {
-    //     method: 'GET',
-    //     headers: { 'X-Api-Key': key},
-    //     contentType: 'application/json',
-    //     });
-    //   return response.json(); // parses JSON response into native JavaScript objects
-    // }
-    // laureates.forEach(laureate => {
-    //   fetchData(laureate.birth_city, laureate.birth_country_code).then((data) => {
-    //     laureate["latitude"] = data[0].latitude;
-    //     laureate["longitude"] = data[0].longitude;
-    //     console.log(laureate)
-    //     console.log(data);
-    //   });
-    // });
     // Dimensions
-    const width = 1400;
-    const height = 700;
+    const width = 1230;
+    const height = 620;
+    const minYear = (0, _d3Array.min)(laureates, (d)=>d.year);
+    const maxYear = (0, _d3Array.max)(laureates, (d)=>d.year);
+    let brushMin = minYear;
+    let brushMax = maxYear;
     // Append SVG container
     const svg = (0, _d3Selection.select)("#map").append("svg").attr("viewBox", `0 0 ${width} ${height}`);
     // Define projection
-    const projection = (0, _d3Geo.geoEqualEarth)().scale(250).translate([
+    const projection = (0, _d3Geo.geoEqualEarth)().scale(220).translate([
         width / 2,
         height / 2
     ]);
@@ -648,21 +630,42 @@ const drawMap = (laureates, countries)=>{
     graticules.append("path").datum(graticule.outline).attr("class", "graticule outline").attr("d", geoPathGenerator);
     // Append country fills
     svg.selectAll(".path-mercator").data(countries.features).join("path").attr("class", "countries path-mercator").attr("d", geoPathGenerator).attr("fill", "#f8fcff").attr("stroke", "#09131b").attr("stroke-opacity", 0.4);
+    const showCountryTooltip = (d)=>{
+        (0, _d3Selection.select)("#map-tooltip").text(d.laureates ? `${d.name}, ${d.laureates.length} laureate${d.laureates.length > 1 ? "s" : ""}` : `${d.name}, 0 laureate`).transition().style("opacity", 1);
+    };
+    const showCityTooltip = (d)=>{
+        (0, _d3Selection.select)("#map-tooltip").text(`${d.city}, ${d.laureates.length} laureate${d.laureates.length > 1 ? "s" : ""}`).transition().style("opacity", 1);
+    };
+    const hideTooltip = ()=>{
+        (0, _d3Selection.select)("#map-tooltip").transition().style("opacity", 0);
+    };
+    const updateCountryFills = ()=>{
+        const selectedData = JSON.parse(JSON.stringify(countries.features));
+        selectedData.forEach((d)=>{
+            if (d.properties.laureates) d.properties.laureates = d.properties.laureates.filter((l)=>l.year >= brushMin && l.year <= brushMax);
+        });
+        (0, _d3Selection.selectAll)(".path-mercator").data(selectedData).on("mouseenter", (e, d)=>showCountryTooltip(d.properties)).on("mouseleave", hideTooltip).transition().attr("fill", (d)=>d.properties.laureates && d.properties.laureates.length > 0 ? (0, _scales.countryColorScale)(d.properties.laureates.length) : "#f8fcff");
+    };
+    const updateCityCircles = ()=>{
+        const selectedData = JSON.parse(JSON.stringify(birthCities));
+        selectedData.forEach((city)=>{
+            city.laureates = city.laureates.filter((l)=>l.year >= brushMin && l.year <= brushMax);
+        });
+        (0, _d3Selection.selectAll)(".circle-city").data(selectedData).on("mouseenter", (e, d)=>showCityTooltip(d)).on("mouseleave", hideTooltip).transition().attr("r", (d)=>(0, _scales.getCityRadius)(d.laureates.length, maxLaureatesPerCity));
+    };
+    let isCountryMap = true;
     // Display laureates' countries
     const displayCountries = ()=>{
+        isCountryMap = true;
         // Remove city circles
         (0, _d3Selection.selectAll)(".circle-city").transition().attr("fill-opacity", 0).attr("stroke-opacity", 0).remove();
-        // Color birth countries
-        (0, _d3Selection.selectAll)(".path-mercator").on("mouseenter", (e, d)=>{
-            (0, _d3Selection.select)("#map-tooltip").text(`${d.properties.name}, ${d.properties.laureates ? d.properties.laureates.length : 0} laureates`).transition().style("opacity", 1);
-        }).on("mouseleave", ()=>{
-            (0, _d3Selection.select)("#map-tooltip").transition().style("opacity", 0);
-        }).transition().attr("fill", (d)=>d.properties.laureates ? (0, _scales.countryColorScale)(d.properties.laureates.length) : "#f8fcff");
+        updateCountryFills();
         // Show related legend
         (0, _d3Selection.select)(".legend-cities").style("display", "none");
         (0, _d3Selection.select)(".legend-countries").style("display", "flex");
     };
     const displayCities = ()=>{
+        isCountryMap = false;
         // Remove country styles and events
         (0, _d3Selection.selectAll)(".path-mercator").on("mouseenter", null).on("leave", null).transition().attr("fill", "#f8fcff");
         // Show birth cities
@@ -672,11 +675,8 @@ const drawMap = (laureates, countries)=>{
             ])[0]).attr("cy", (d)=>projection([
                 d.longitude,
                 d.latitude
-            ])[1]).attr("r", (d)=>(0, _scales.getCityRadius)(d.laureates.length, maxLaureatesPerCity)).attr("fill", "#35a7c2").attr("fill-opacity", 0).attr("stroke", "#35a7c2").attr("stroke-opacity", 0).on("mouseenter", (e, d)=>{
-            (0, _d3Selection.select)("#map-tooltip").text(`${d.city}, ${d.laureates.length} laureates`).transition().style("opacity", 1);
-        }).on("mouseleave", ()=>{
-            (0, _d3Selection.select)("#map-tooltip").transition().style("opacity", 0);
-        }).transition().attr("fill-opacity", 0.5).attr("stroke-opacity", 1);
+            ])[1]).attr("fill", "#35a7c2").attr("fill-opacity", 0.5).attr("stroke", "#35a7c2");
+        updateCityCircles();
         // Show related legend
         (0, _d3Selection.select)(".legend-countries").style("display", "none");
         (0, _d3Selection.select)(".legend-cities").style("display", "block");
@@ -710,9 +710,53 @@ const drawMap = (laureates, countries)=>{
     (0, _d3Selection.select)("#map-reset").attr("class", "hidden").on("click", ()=>{
         (0, _d3Selection.select)(".map-container").transition().call(zoomHandler.transform, (0, _d3Zoom.zoomIdentity));
     });
+    // Add years selector
+    const yearsWidth = 1000;
+    const yearsHeight = 80;
+    const yearsMargin = {
+        top: 0,
+        right: 10,
+        bottom: 0,
+        left: 0
+    };
+    const yearsInnerWidth = yearsWidth - yearsMargin.right - yearsMargin.left;
+    const xScale = (0, _d3Scale.scaleLinear)().domain([
+        minYear,
+        maxYear
+    ]).range([
+        0,
+        yearsInnerWidth
+    ]);
+    const yearsSelector = (0, _d3Selection.select)("#years-selector").append("svg").attr("viewBox", `0 0 ${yearsWidth} ${yearsHeight}`);
+    const xAxisGenerator = (0, _d3Axis.axisBottom)(xScale).tickFormat((0, _d3Format.format)("")).tickSizeOuter(0);
+    yearsSelector.append("g").attr("class", "axis-x").attr("transform", `translate(0, 30)`).call(xAxisGenerator);
+    const handleBrush = (e)=>{
+        console.log(e);
+        brushMin = Math.round(xScale.invert(e.selection[0]));
+        brushMax = Math.round(xScale.invert(e.selection[1]));
+        if (isCountryMap) updateCountryFills();
+        else updateCityCircles();
+    };
+    const brushHandler = (0, _d3Brush.brushX)() // Always capture the full height with the brush
+    .extent([
+        [
+            0,
+            0
+        ],
+        [
+            yearsInnerWidth,
+            yearsHeight
+        ]
+    ]) // Initialize the brush area
+    .on("brush", handleBrush);
+    yearsSelector.call(brushHandler).call(brushHandler.move, [
+        xScale(minYear),
+        xScale(maxYear)
+    ]); // Initial brushed zone
+// Note that can also pan and resize area!
 };
 
-},{"d3-selection":"gn9gd","d3-geo":"01Z75","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./scales":"NYsfE","d3-transition":"4lorl","d3-array":"1yX2W","./legend":"ieevi","d3-zoom":"hQoq0"}],"gn9gd":[function(require,module,exports) {
+},{"d3-selection":"gn9gd","d3-geo":"01Z75","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./scales":"NYsfE","d3-transition":"4lorl","d3-array":"1yX2W","./legend":"ieevi","d3-zoom":"hQoq0","d3-scale":"UQ8g3","d3-axis":"2g6gM","d3-format":"4XOv2","d3-brush":"7TG1H"}],"gn9gd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "create", ()=>(0, _createJsDefault.default));
@@ -2807,7 +2851,7 @@ var _unionJs = require("./union.js");
 var _unionJsDefault = parcelHelpers.interopDefault(_unionJs);
 var _internmap = require("internmap");
 
-},{"./bisect.js":"2jqf4","./ascending.js":"2iZSL","./bisector.js":"1BY0F","./blur.js":false,"./count.js":false,"./cross.js":false,"./cumsum.js":false,"./descending.js":"dpgkj","./deviation.js":false,"./extent.js":false,"./fsum.js":"7NEFi","./group.js":false,"./groupSort.js":false,"./bin.js":false,"./threshold/freedmanDiaconis.js":false,"./threshold/scott.js":false,"./threshold/sturges.js":false,"./max.js":"6b1uv","./maxIndex.js":false,"./mean.js":false,"./median.js":false,"./merge.js":"hviMC","./min.js":false,"./minIndex.js":false,"./mode.js":false,"./nice.js":false,"./pairs.js":false,"./permute.js":false,"./quantile.js":false,"./quickselect.js":false,"./range.js":"kH8Ba","./rank.js":false,"./least.js":false,"./leastIndex.js":false,"./greatest.js":false,"./greatestIndex.js":false,"./scan.js":false,"./shuffle.js":false,"./sum.js":false,"./ticks.js":"iDfKX","./transpose.js":false,"./variance.js":false,"./zip.js":false,"./every.js":false,"./some.js":false,"./filter.js":false,"./map.js":false,"./reduce.js":false,"./reverse.js":false,"./sort.js":false,"./difference.js":false,"./disjoint.js":false,"./intersection.js":false,"./subset.js":false,"./superset.js":false,"./union.js":false,"internmap":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2jqf4":[function(require,module,exports) {
+},{"./bisect.js":"2jqf4","./ascending.js":"2iZSL","./bisector.js":"1BY0F","./blur.js":false,"./count.js":false,"./cross.js":false,"./cumsum.js":false,"./descending.js":"dpgkj","./deviation.js":false,"./extent.js":false,"./fsum.js":"7NEFi","./group.js":false,"./groupSort.js":false,"./bin.js":false,"./threshold/freedmanDiaconis.js":false,"./threshold/scott.js":false,"./threshold/sturges.js":false,"./max.js":"6b1uv","./maxIndex.js":false,"./mean.js":false,"./median.js":false,"./merge.js":"hviMC","./min.js":"1KKa7","./minIndex.js":false,"./mode.js":false,"./nice.js":false,"./pairs.js":false,"./permute.js":false,"./quantile.js":false,"./quickselect.js":false,"./range.js":"kH8Ba","./rank.js":false,"./least.js":false,"./leastIndex.js":false,"./greatest.js":false,"./greatestIndex.js":false,"./scan.js":false,"./shuffle.js":false,"./sum.js":false,"./ticks.js":"iDfKX","./transpose.js":false,"./variance.js":false,"./zip.js":false,"./every.js":false,"./some.js":false,"./filter.js":false,"./map.js":false,"./reduce.js":false,"./reverse.js":false,"./sort.js":false,"./difference.js":false,"./disjoint.js":false,"./intersection.js":false,"./subset.js":false,"./superset.js":false,"./union.js":false,"internmap":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2jqf4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "bisectRight", ()=>bisectRight);
@@ -3004,6 +3048,21 @@ function merge(arrays) {
     return Array.from(flatten(arrays));
 }
 exports.default = merge;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1KKa7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function min(values, valueof) {
+    let min;
+    if (valueof === undefined) {
+        for (const value of values)if (value != null && (min > value || min === undefined && value >= value)) min = value;
+    } else {
+        let index = -1;
+        for (let value of values)if ((value = valueof(value, ++index, values)) != null && (min > value || min === undefined && value >= value)) min = value;
+    }
+    return min;
+}
+exports.default = min;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kH8Ba":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -8360,6 +8419,766 @@ function transform(node) {
 exports.default = transform;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jokv0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "nopropagation", ()=>nopropagation);
+function nopropagation(event) {
+    event.stopImmediatePropagation();
+}
+exports.default = function(event) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2g6gM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "axisTop", ()=>(0, _axisJs.axisTop));
+parcelHelpers.export(exports, "axisRight", ()=>(0, _axisJs.axisRight));
+parcelHelpers.export(exports, "axisBottom", ()=>(0, _axisJs.axisBottom));
+parcelHelpers.export(exports, "axisLeft", ()=>(0, _axisJs.axisLeft));
+var _axisJs = require("./axis.js");
+
+},{"./axis.js":"lwARn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lwARn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "axisTop", ()=>axisTop);
+parcelHelpers.export(exports, "axisRight", ()=>axisRight);
+parcelHelpers.export(exports, "axisBottom", ()=>axisBottom);
+parcelHelpers.export(exports, "axisLeft", ()=>axisLeft);
+var _identityJs = require("./identity.js");
+var _identityJsDefault = parcelHelpers.interopDefault(_identityJs);
+var top = 1, right = 2, bottom = 3, left = 4, epsilon = 1e-6;
+function translateX(x) {
+    return "translate(" + x + ",0)";
+}
+function translateY(y) {
+    return "translate(0," + y + ")";
+}
+function number(scale) {
+    return (d)=>+scale(d);
+}
+function center(scale, offset) {
+    offset = Math.max(0, scale.bandwidth() - offset * 2) / 2;
+    if (scale.round()) offset = Math.round(offset);
+    return (d)=>+scale(d) + offset;
+}
+function entering() {
+    return !this.__axis;
+}
+function axis(orient, scale) {
+    var tickArguments = [], tickValues = null, tickFormat = null, tickSizeInner = 6, tickSizeOuter = 6, tickPadding = 3, offset = typeof window !== "undefined" && window.devicePixelRatio > 1 ? 0 : 0.5, k = orient === top || orient === left ? -1 : 1, x = orient === left || orient === right ? "x" : "y", transform = orient === top || orient === bottom ? translateX : translateY;
+    function axis(context) {
+        var values = tickValues == null ? scale.ticks ? scale.ticks.apply(scale, tickArguments) : scale.domain() : tickValues, format = tickFormat == null ? scale.tickFormat ? scale.tickFormat.apply(scale, tickArguments) : (0, _identityJsDefault.default) : tickFormat, spacing = Math.max(tickSizeInner, 0) + tickPadding, range = scale.range(), range0 = +range[0] + offset, range1 = +range[range.length - 1] + offset, position = (scale.bandwidth ? center : number)(scale.copy(), offset), selection = context.selection ? context.selection() : context, path = selection.selectAll(".domain").data([
+            null
+        ]), tick = selection.selectAll(".tick").data(values, scale).order(), tickExit = tick.exit(), tickEnter = tick.enter().append("g").attr("class", "tick"), line = tick.select("line"), text = tick.select("text");
+        path = path.merge(path.enter().insert("path", ".tick").attr("class", "domain").attr("stroke", "currentColor"));
+        tick = tick.merge(tickEnter);
+        line = line.merge(tickEnter.append("line").attr("stroke", "currentColor").attr(x + "2", k * tickSizeInner));
+        text = text.merge(tickEnter.append("text").attr("fill", "currentColor").attr(x, k * spacing).attr("dy", orient === top ? "0em" : orient === bottom ? "0.71em" : "0.32em"));
+        if (context !== selection) {
+            path = path.transition(context);
+            tick = tick.transition(context);
+            line = line.transition(context);
+            text = text.transition(context);
+            tickExit = tickExit.transition(context).attr("opacity", epsilon).attr("transform", function(d) {
+                return isFinite(d = position(d)) ? transform(d + offset) : this.getAttribute("transform");
+            });
+            tickEnter.attr("opacity", epsilon).attr("transform", function(d) {
+                var p = this.parentNode.__axis;
+                return transform((p && isFinite(p = p(d)) ? p : position(d)) + offset);
+            });
+        }
+        tickExit.remove();
+        path.attr("d", orient === left || orient === right ? tickSizeOuter ? "M" + k * tickSizeOuter + "," + range0 + "H" + offset + "V" + range1 + "H" + k * tickSizeOuter : "M" + offset + "," + range0 + "V" + range1 : tickSizeOuter ? "M" + range0 + "," + k * tickSizeOuter + "V" + offset + "H" + range1 + "V" + k * tickSizeOuter : "M" + range0 + "," + offset + "H" + range1);
+        tick.attr("opacity", 1).attr("transform", function(d) {
+            return transform(position(d) + offset);
+        });
+        line.attr(x + "2", k * tickSizeInner);
+        text.attr(x, k * spacing).text(format);
+        selection.filter(entering).attr("fill", "none").attr("font-size", 10).attr("font-family", "sans-serif").attr("text-anchor", orient === right ? "start" : orient === left ? "end" : "middle");
+        selection.each(function() {
+            this.__axis = position;
+        });
+    }
+    axis.scale = function(_) {
+        return arguments.length ? (scale = _, axis) : scale;
+    };
+    axis.ticks = function() {
+        return tickArguments = Array.from(arguments), axis;
+    };
+    axis.tickArguments = function(_) {
+        return arguments.length ? (tickArguments = _ == null ? [] : Array.from(_), axis) : tickArguments.slice();
+    };
+    axis.tickValues = function(_) {
+        return arguments.length ? (tickValues = _ == null ? null : Array.from(_), axis) : tickValues && tickValues.slice();
+    };
+    axis.tickFormat = function(_) {
+        return arguments.length ? (tickFormat = _, axis) : tickFormat;
+    };
+    axis.tickSize = function(_) {
+        return arguments.length ? (tickSizeInner = tickSizeOuter = +_, axis) : tickSizeInner;
+    };
+    axis.tickSizeInner = function(_) {
+        return arguments.length ? (tickSizeInner = +_, axis) : tickSizeInner;
+    };
+    axis.tickSizeOuter = function(_) {
+        return arguments.length ? (tickSizeOuter = +_, axis) : tickSizeOuter;
+    };
+    axis.tickPadding = function(_) {
+        return arguments.length ? (tickPadding = +_, axis) : tickPadding;
+    };
+    axis.offset = function(_) {
+        return arguments.length ? (offset = +_, axis) : offset;
+    };
+    return axis;
+}
+function axisTop(scale) {
+    return axis(top, scale);
+}
+function axisRight(scale) {
+    return axis(right, scale);
+}
+function axisBottom(scale) {
+    return axis(bottom, scale);
+}
+function axisLeft(scale) {
+    return axis(left, scale);
+}
+
+},{"./identity.js":"aXZUf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aXZUf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = function(x) {
+    return x;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7TG1H":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "brush", ()=>(0, _brushJsDefault.default));
+parcelHelpers.export(exports, "brushX", ()=>(0, _brushJs.brushX));
+parcelHelpers.export(exports, "brushY", ()=>(0, _brushJs.brushY));
+parcelHelpers.export(exports, "brushSelection", ()=>(0, _brushJs.brushSelection));
+var _brushJs = require("./brush.js");
+var _brushJsDefault = parcelHelpers.interopDefault(_brushJs);
+
+},{"./brush.js":"7XkAB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7XkAB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "brushSelection", ()=>brushSelection);
+parcelHelpers.export(exports, "brushX", ()=>brushX);
+parcelHelpers.export(exports, "brushY", ()=>brushY);
+var _d3Dispatch = require("d3-dispatch");
+var _d3Drag = require("d3-drag");
+var _d3Interpolate = require("d3-interpolate");
+var _d3Selection = require("d3-selection");
+var _d3Transition = require("d3-transition");
+var _constantJs = require("./constant.js");
+var _constantJsDefault = parcelHelpers.interopDefault(_constantJs);
+var _eventJs = require("./event.js");
+var _eventJsDefault = parcelHelpers.interopDefault(_eventJs);
+var _noeventJs = require("./noevent.js");
+var _noeventJsDefault = parcelHelpers.interopDefault(_noeventJs);
+var MODE_DRAG = {
+    name: "drag"
+}, MODE_SPACE = {
+    name: "space"
+}, MODE_HANDLE = {
+    name: "handle"
+}, MODE_CENTER = {
+    name: "center"
+};
+const { abs , max , min  } = Math;
+function number1(e) {
+    return [
+        +e[0],
+        +e[1]
+    ];
+}
+function number2(e) {
+    return [
+        number1(e[0]),
+        number1(e[1])
+    ];
+}
+var X = {
+    name: "x",
+    handles: [
+        "w",
+        "e"
+    ].map(type),
+    input: function(x, e) {
+        return x == null ? null : [
+            [
+                +x[0],
+                e[0][1]
+            ],
+            [
+                +x[1],
+                e[1][1]
+            ]
+        ];
+    },
+    output: function(xy) {
+        return xy && [
+            xy[0][0],
+            xy[1][0]
+        ];
+    }
+};
+var Y = {
+    name: "y",
+    handles: [
+        "n",
+        "s"
+    ].map(type),
+    input: function(y, e) {
+        return y == null ? null : [
+            [
+                e[0][0],
+                +y[0]
+            ],
+            [
+                e[1][0],
+                +y[1]
+            ]
+        ];
+    },
+    output: function(xy) {
+        return xy && [
+            xy[0][1],
+            xy[1][1]
+        ];
+    }
+};
+var XY = {
+    name: "xy",
+    handles: [
+        "n",
+        "w",
+        "e",
+        "s",
+        "nw",
+        "ne",
+        "sw",
+        "se"
+    ].map(type),
+    input: function(xy) {
+        return xy == null ? null : number2(xy);
+    },
+    output: function(xy) {
+        return xy;
+    }
+};
+var cursors = {
+    overlay: "crosshair",
+    selection: "move",
+    n: "ns-resize",
+    e: "ew-resize",
+    s: "ns-resize",
+    w: "ew-resize",
+    nw: "nwse-resize",
+    ne: "nesw-resize",
+    se: "nwse-resize",
+    sw: "nesw-resize"
+};
+var flipX = {
+    e: "w",
+    w: "e",
+    nw: "ne",
+    ne: "nw",
+    se: "sw",
+    sw: "se"
+};
+var flipY = {
+    n: "s",
+    s: "n",
+    nw: "sw",
+    ne: "se",
+    se: "ne",
+    sw: "nw"
+};
+var signsX = {
+    overlay: 1,
+    selection: 1,
+    n: null,
+    e: 1,
+    s: null,
+    w: -1,
+    nw: -1,
+    ne: 1,
+    se: 1,
+    sw: -1
+};
+var signsY = {
+    overlay: 1,
+    selection: 1,
+    n: -1,
+    e: null,
+    s: 1,
+    w: null,
+    nw: -1,
+    ne: -1,
+    se: 1,
+    sw: 1
+};
+function type(t) {
+    return {
+        type: t
+    };
+}
+// Ignore right-click, since that should open the context menu.
+function defaultFilter(event) {
+    return !event.ctrlKey && !event.button;
+}
+function defaultExtent() {
+    var svg = this.ownerSVGElement || this;
+    if (svg.hasAttribute("viewBox")) {
+        svg = svg.viewBox.baseVal;
+        return [
+            [
+                svg.x,
+                svg.y
+            ],
+            [
+                svg.x + svg.width,
+                svg.y + svg.height
+            ]
+        ];
+    }
+    return [
+        [
+            0,
+            0
+        ],
+        [
+            svg.width.baseVal.value,
+            svg.height.baseVal.value
+        ]
+    ];
+}
+function defaultTouchable() {
+    return navigator.maxTouchPoints || "ontouchstart" in this;
+}
+// Like d3.local, but with the name “__brush” rather than auto-generated.
+function local(node) {
+    while(!node.__brush)if (!(node = node.parentNode)) return;
+    return node.__brush;
+}
+function empty(extent) {
+    return extent[0][0] === extent[1][0] || extent[0][1] === extent[1][1];
+}
+function brushSelection(node) {
+    var state = node.__brush;
+    return state ? state.dim.output(state.selection) : null;
+}
+function brushX() {
+    return brush(X);
+}
+function brushY() {
+    return brush(Y);
+}
+exports.default = function() {
+    return brush(XY);
+};
+function brush(dim) {
+    var extent = defaultExtent, filter = defaultFilter, touchable = defaultTouchable, keys = true, listeners = (0, _d3Dispatch.dispatch)("start", "brush", "end"), handleSize = 6, touchending;
+    function brush(group) {
+        var overlay = group.property("__brush", initialize).selectAll(".overlay").data([
+            type("overlay")
+        ]);
+        overlay.enter().append("rect").attr("class", "overlay").attr("pointer-events", "all").attr("cursor", cursors.overlay).merge(overlay).each(function() {
+            var extent = local(this).extent;
+            (0, _d3Selection.select)(this).attr("x", extent[0][0]).attr("y", extent[0][1]).attr("width", extent[1][0] - extent[0][0]).attr("height", extent[1][1] - extent[0][1]);
+        });
+        group.selectAll(".selection").data([
+            type("selection")
+        ]).enter().append("rect").attr("class", "selection").attr("cursor", cursors.selection).attr("fill", "#777").attr("fill-opacity", 0.3).attr("stroke", "#fff").attr("shape-rendering", "crispEdges");
+        var handle = group.selectAll(".handle").data(dim.handles, function(d) {
+            return d.type;
+        });
+        handle.exit().remove();
+        handle.enter().append("rect").attr("class", function(d) {
+            return "handle handle--" + d.type;
+        }).attr("cursor", function(d) {
+            return cursors[d.type];
+        });
+        group.each(redraw).attr("fill", "none").attr("pointer-events", "all").on("mousedown.brush", started).filter(touchable).on("touchstart.brush", started).on("touchmove.brush", touchmoved).on("touchend.brush touchcancel.brush", touchended).style("touch-action", "none").style("-webkit-tap-highlight-color", "rgba(0,0,0,0)");
+    }
+    brush.move = function(group, selection, event) {
+        if (group.tween) group.on("start.brush", function(event) {
+            emitter(this, arguments).beforestart().start(event);
+        }).on("interrupt.brush end.brush", function(event) {
+            emitter(this, arguments).end(event);
+        }).tween("brush", function() {
+            var that = this, state = that.__brush, emit = emitter(that, arguments), selection0 = state.selection, selection1 = dim.input(typeof selection === "function" ? selection.apply(this, arguments) : selection, state.extent), i = (0, _d3Interpolate.interpolate)(selection0, selection1);
+            function tween(t) {
+                state.selection = t === 1 && selection1 === null ? null : i(t);
+                redraw.call(that);
+                emit.brush();
+            }
+            return selection0 !== null && selection1 !== null ? tween : tween(1);
+        });
+        else group.each(function() {
+            var that = this, args = arguments, state = that.__brush, selection1 = dim.input(typeof selection === "function" ? selection.apply(that, args) : selection, state.extent), emit = emitter(that, args).beforestart();
+            (0, _d3Transition.interrupt)(that);
+            state.selection = selection1 === null ? null : selection1;
+            redraw.call(that);
+            emit.start(event).brush(event).end(event);
+        });
+    };
+    brush.clear = function(group, event) {
+        brush.move(group, null, event);
+    };
+    function redraw() {
+        var group = (0, _d3Selection.select)(this), selection = local(this).selection;
+        if (selection) {
+            group.selectAll(".selection").style("display", null).attr("x", selection[0][0]).attr("y", selection[0][1]).attr("width", selection[1][0] - selection[0][0]).attr("height", selection[1][1] - selection[0][1]);
+            group.selectAll(".handle").style("display", null).attr("x", function(d) {
+                return d.type[d.type.length - 1] === "e" ? selection[1][0] - handleSize / 2 : selection[0][0] - handleSize / 2;
+            }).attr("y", function(d) {
+                return d.type[0] === "s" ? selection[1][1] - handleSize / 2 : selection[0][1] - handleSize / 2;
+            }).attr("width", function(d) {
+                return d.type === "n" || d.type === "s" ? selection[1][0] - selection[0][0] + handleSize : handleSize;
+            }).attr("height", function(d) {
+                return d.type === "e" || d.type === "w" ? selection[1][1] - selection[0][1] + handleSize : handleSize;
+            });
+        } else group.selectAll(".selection,.handle").style("display", "none").attr("x", null).attr("y", null).attr("width", null).attr("height", null);
+    }
+    function emitter(that, args, clean) {
+        var emit = that.__brush.emitter;
+        return emit && (!clean || !emit.clean) ? emit : new Emitter(that, args, clean);
+    }
+    function Emitter(that, args, clean) {
+        this.that = that;
+        this.args = args;
+        this.state = that.__brush;
+        this.active = 0;
+        this.clean = clean;
+    }
+    Emitter.prototype = {
+        beforestart: function() {
+            if (++this.active === 1) this.state.emitter = this, this.starting = true;
+            return this;
+        },
+        start: function(event, mode) {
+            if (this.starting) this.starting = false, this.emit("start", event, mode);
+            else this.emit("brush", event);
+            return this;
+        },
+        brush: function(event, mode) {
+            this.emit("brush", event, mode);
+            return this;
+        },
+        end: function(event, mode) {
+            if (--this.active === 0) delete this.state.emitter, this.emit("end", event, mode);
+            return this;
+        },
+        emit: function(type, event, mode) {
+            var d = (0, _d3Selection.select)(this.that).datum();
+            listeners.call(type, this.that, new (0, _eventJsDefault.default)(type, {
+                sourceEvent: event,
+                target: brush,
+                selection: dim.output(this.state.selection),
+                mode,
+                dispatch: listeners
+            }), d);
+        }
+    };
+    function started(event) {
+        if (touchending && !event.touches) return;
+        if (!filter.apply(this, arguments)) return;
+        var that = this, type = event.target.__data__.type, mode = (keys && event.metaKey ? type = "overlay" : type) === "selection" ? MODE_DRAG : keys && event.altKey ? MODE_CENTER : MODE_HANDLE, signX = dim === Y ? null : signsX[type], signY = dim === X ? null : signsY[type], state = local(that), extent = state.extent, selection = state.selection, W = extent[0][0], w0, w1, N = extent[0][1], n0, n1, E = extent[1][0], e0, e1, S = extent[1][1], s0, s1, dx = 0, dy = 0, moving, shifting = signX && signY && keys && event.shiftKey, lockX, lockY, points = Array.from(event.touches || [
+            event
+        ], (t)=>{
+            const i = t.identifier;
+            t = (0, _d3Selection.pointer)(t, that);
+            t.point0 = t.slice();
+            t.identifier = i;
+            return t;
+        });
+        (0, _d3Transition.interrupt)(that);
+        var emit = emitter(that, arguments, true).beforestart();
+        if (type === "overlay") {
+            if (selection) moving = true;
+            const pts = [
+                points[0],
+                points[1] || points[0]
+            ];
+            state.selection = selection = [
+                [
+                    w0 = dim === Y ? W : min(pts[0][0], pts[1][0]),
+                    n0 = dim === X ? N : min(pts[0][1], pts[1][1])
+                ],
+                [
+                    e0 = dim === Y ? E : max(pts[0][0], pts[1][0]),
+                    s0 = dim === X ? S : max(pts[0][1], pts[1][1])
+                ]
+            ];
+            if (points.length > 1) move(event);
+        } else {
+            w0 = selection[0][0];
+            n0 = selection[0][1];
+            e0 = selection[1][0];
+            s0 = selection[1][1];
+        }
+        w1 = w0;
+        n1 = n0;
+        e1 = e0;
+        s1 = s0;
+        var group = (0, _d3Selection.select)(that).attr("pointer-events", "none");
+        var overlay = group.selectAll(".overlay").attr("cursor", cursors[type]);
+        if (event.touches) {
+            emit.moved = moved;
+            emit.ended = ended;
+        } else {
+            var view = (0, _d3Selection.select)(event.view).on("mousemove.brush", moved, true).on("mouseup.brush", ended, true);
+            if (keys) view.on("keydown.brush", keydowned, true).on("keyup.brush", keyupped, true);
+            (0, _d3Drag.dragDisable)(event.view);
+        }
+        redraw.call(that);
+        emit.start(event, mode.name);
+        function moved(event) {
+            for (const p of event.changedTouches || [
+                event
+            ]){
+                for (const d of points)if (d.identifier === p.identifier) d.cur = (0, _d3Selection.pointer)(p, that);
+            }
+            if (shifting && !lockX && !lockY && points.length === 1) {
+                const point = points[0];
+                if (abs(point.cur[0] - point[0]) > abs(point.cur[1] - point[1])) lockY = true;
+                else lockX = true;
+            }
+            for (const point of points)if (point.cur) point[0] = point.cur[0], point[1] = point.cur[1];
+            moving = true;
+            (0, _noeventJsDefault.default)(event);
+            move(event);
+        }
+        function move(event) {
+            const point = points[0], point0 = point.point0;
+            var t;
+            dx = point[0] - point0[0];
+            dy = point[1] - point0[1];
+            switch(mode){
+                case MODE_SPACE:
+                case MODE_DRAG:
+                    if (signX) dx = max(W - w0, min(E - e0, dx)), w1 = w0 + dx, e1 = e0 + dx;
+                    if (signY) dy = max(N - n0, min(S - s0, dy)), n1 = n0 + dy, s1 = s0 + dy;
+                    break;
+                case MODE_HANDLE:
+                    if (points[1]) {
+                        if (signX) w1 = max(W, min(E, points[0][0])), e1 = max(W, min(E, points[1][0])), signX = 1;
+                        if (signY) n1 = max(N, min(S, points[0][1])), s1 = max(N, min(S, points[1][1])), signY = 1;
+                    } else {
+                        if (signX < 0) dx = max(W - w0, min(E - w0, dx)), w1 = w0 + dx, e1 = e0;
+                        else if (signX > 0) dx = max(W - e0, min(E - e0, dx)), w1 = w0, e1 = e0 + dx;
+                        if (signY < 0) dy = max(N - n0, min(S - n0, dy)), n1 = n0 + dy, s1 = s0;
+                        else if (signY > 0) dy = max(N - s0, min(S - s0, dy)), n1 = n0, s1 = s0 + dy;
+                    }
+                    break;
+                case MODE_CENTER:
+                    if (signX) w1 = max(W, min(E, w0 - dx * signX)), e1 = max(W, min(E, e0 + dx * signX));
+                    if (signY) n1 = max(N, min(S, n0 - dy * signY)), s1 = max(N, min(S, s0 + dy * signY));
+                    break;
+            }
+            if (e1 < w1) {
+                signX *= -1;
+                t = w0, w0 = e0, e0 = t;
+                t = w1, w1 = e1, e1 = t;
+                if (type in flipX) overlay.attr("cursor", cursors[type = flipX[type]]);
+            }
+            if (s1 < n1) {
+                signY *= -1;
+                t = n0, n0 = s0, s0 = t;
+                t = n1, n1 = s1, s1 = t;
+                if (type in flipY) overlay.attr("cursor", cursors[type = flipY[type]]);
+            }
+            if (state.selection) selection = state.selection; // May be set by brush.move!
+            if (lockX) w1 = selection[0][0], e1 = selection[1][0];
+            if (lockY) n1 = selection[0][1], s1 = selection[1][1];
+            if (selection[0][0] !== w1 || selection[0][1] !== n1 || selection[1][0] !== e1 || selection[1][1] !== s1) {
+                state.selection = [
+                    [
+                        w1,
+                        n1
+                    ],
+                    [
+                        e1,
+                        s1
+                    ]
+                ];
+                redraw.call(that);
+                emit.brush(event, mode.name);
+            }
+        }
+        function ended(event) {
+            (0, _noeventJs.nopropagation)(event);
+            if (event.touches) {
+                if (event.touches.length) return;
+                if (touchending) clearTimeout(touchending);
+                touchending = setTimeout(function() {
+                    touchending = null;
+                }, 500); // Ghost clicks are delayed!
+            } else {
+                (0, _d3Drag.dragEnable)(event.view, moving);
+                view.on("keydown.brush keyup.brush mousemove.brush mouseup.brush", null);
+            }
+            group.attr("pointer-events", "all");
+            overlay.attr("cursor", cursors.overlay);
+            if (state.selection) selection = state.selection; // May be set by brush.move (on start)!
+            if (empty(selection)) state.selection = null, redraw.call(that);
+            emit.end(event, mode.name);
+        }
+        function keydowned(event) {
+            switch(event.keyCode){
+                case 16:
+                    shifting = signX && signY;
+                    break;
+                case 18:
+                    if (mode === MODE_HANDLE) {
+                        if (signX) e0 = e1 - dx * signX, w0 = w1 + dx * signX;
+                        if (signY) s0 = s1 - dy * signY, n0 = n1 + dy * signY;
+                        mode = MODE_CENTER;
+                        move(event);
+                    }
+                    break;
+                case 32:
+                    if (mode === MODE_HANDLE || mode === MODE_CENTER) {
+                        if (signX < 0) e0 = e1 - dx;
+                        else if (signX > 0) w0 = w1 - dx;
+                        if (signY < 0) s0 = s1 - dy;
+                        else if (signY > 0) n0 = n1 - dy;
+                        mode = MODE_SPACE;
+                        overlay.attr("cursor", cursors.selection);
+                        move(event);
+                    }
+                    break;
+                default:
+                    return;
+            }
+            (0, _noeventJsDefault.default)(event);
+        }
+        function keyupped(event) {
+            switch(event.keyCode){
+                case 16:
+                    if (shifting) {
+                        lockX = lockY = shifting = false;
+                        move(event);
+                    }
+                    break;
+                case 18:
+                    if (mode === MODE_CENTER) {
+                        if (signX < 0) e0 = e1;
+                        else if (signX > 0) w0 = w1;
+                        if (signY < 0) s0 = s1;
+                        else if (signY > 0) n0 = n1;
+                        mode = MODE_HANDLE;
+                        move(event);
+                    }
+                    break;
+                case 32:
+                    if (mode === MODE_SPACE) {
+                        if (event.altKey) {
+                            if (signX) e0 = e1 - dx * signX, w0 = w1 + dx * signX;
+                            if (signY) s0 = s1 - dy * signY, n0 = n1 + dy * signY;
+                            mode = MODE_CENTER;
+                        } else {
+                            if (signX < 0) e0 = e1;
+                            else if (signX > 0) w0 = w1;
+                            if (signY < 0) s0 = s1;
+                            else if (signY > 0) n0 = n1;
+                            mode = MODE_HANDLE;
+                        }
+                        overlay.attr("cursor", cursors[type]);
+                        move(event);
+                    }
+                    break;
+                default:
+                    return;
+            }
+            (0, _noeventJsDefault.default)(event);
+        }
+    }
+    function touchmoved(event) {
+        emitter(this, arguments).moved(event);
+    }
+    function touchended(event) {
+        emitter(this, arguments).ended(event);
+    }
+    function initialize() {
+        var state = this.__brush || {
+            selection: null
+        };
+        state.extent = number2(extent.apply(this, arguments));
+        state.dim = dim;
+        return state;
+    }
+    brush.extent = function(_) {
+        return arguments.length ? (extent = typeof _ === "function" ? _ : (0, _constantJsDefault.default)(number2(_)), brush) : extent;
+    };
+    brush.filter = function(_) {
+        return arguments.length ? (filter = typeof _ === "function" ? _ : (0, _constantJsDefault.default)(!!_), brush) : filter;
+    };
+    brush.touchable = function(_) {
+        return arguments.length ? (touchable = typeof _ === "function" ? _ : (0, _constantJsDefault.default)(!!_), brush) : touchable;
+    };
+    brush.handleSize = function(_) {
+        return arguments.length ? (handleSize = +_, brush) : handleSize;
+    };
+    brush.keyModifiers = function(_) {
+        return arguments.length ? (keys = !!_, brush) : keys;
+    };
+    brush.on = function() {
+        var value = listeners.on.apply(listeners, arguments);
+        return value === listeners ? brush : value;
+    };
+    return brush;
+}
+
+},{"d3-dispatch":"5WtHO","d3-drag":"hGy7N","d3-interpolate":"6jJyi","d3-selection":"gn9gd","d3-transition":"4lorl","./constant.js":"fmgIQ","./event.js":"6f6C1","./noevent.js":"cozwm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fmgIQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = (x)=>()=>x;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6f6C1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function BrushEvent(type, { sourceEvent , target , selection , mode , dispatch  }) {
+    Object.defineProperties(this, {
+        type: {
+            value: type,
+            enumerable: true,
+            configurable: true
+        },
+        sourceEvent: {
+            value: sourceEvent,
+            enumerable: true,
+            configurable: true
+        },
+        target: {
+            value: target,
+            enumerable: true,
+            configurable: true
+        },
+        selection: {
+            value: selection,
+            enumerable: true,
+            configurable: true
+        },
+        mode: {
+            value: mode,
+            enumerable: true,
+            configurable: true
+        },
+        _: {
+            value: dispatch
+        }
+    });
+}
+exports.default = BrushEvent;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cozwm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "nopropagation", ()=>nopropagation);

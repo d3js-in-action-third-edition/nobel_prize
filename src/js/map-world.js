@@ -1,5 +1,5 @@
 import { select, selectAll } from "d3-selection";
-import { geoEqualEarth, geoPath, geoGraticule } from "d3-geo";
+import { geoEqualEarth, geoPath, geoGraticule, geoMercator, geoConicEqualArea } from "d3-geo";
 import { transition } from "d3-transition";
 import { max, min } from "d3-array";
 import { zoom, zoomIdentity } from "d3-zoom";
@@ -57,7 +57,9 @@ export const drawWorldMap = (laureates, countries) => {
 
   // Define projection
   const projection = geoEqualEarth()
-    .scale(220)
+  // const projection = geoConicEqualArea()
+  //   .scale(width / 7)
+    .scale(width / 5.5)
     .translate([width/2, height/2]);
 
   // Initialize the path generator

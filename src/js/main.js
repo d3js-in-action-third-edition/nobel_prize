@@ -2,6 +2,7 @@ import { drawWorldMap } from "./map-world";
 import { drawFranceMap } from "./map-france";
 
 import countries from "../data/world.json";
+// import countries from "../data/world-2.json";
 import laureates from "../data/laureates.json";
 import franceTopoData from "../data/france.json";
 

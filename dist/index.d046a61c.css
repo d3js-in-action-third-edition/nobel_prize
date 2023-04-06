@@ -141,6 +141,7 @@ a:hover, a:focus {
 }
 
 .instructions {
+  max-width: 600px;
   background-image: url("bulb.bb7f5ba5.svg");
   background-position: 0 3px;
   background-repeat: no-repeat;

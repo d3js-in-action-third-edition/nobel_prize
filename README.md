@@ -1,6 +1,6 @@
-# Romeo and Juliet
+# The Nobel Prize, Observations on the laureates' origins.
 
-Project built along with chapter 12 of [D3.js in Action, 3rd edition](https://www.manning.com/books/d3js-in-action-third-edition). Refer to the chapter for a breakdown of each step.
+Project built along with chapter 13 of [D3.js in Action, 3rd edition](https://www.manning.com/books/d3js-in-action-third-edition). Refer to the chapter for a breakdown of each step.
 
 ## Run this project
 

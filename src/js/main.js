@@ -1,18 +1,12 @@
 import { drawWorldMap } from "./map-world";
 import { drawFranceMap } from "./map-france";
 
-import countries from "../data/world.json";
-// import countries from "../data/world-2.json";
 import laureates from "../data/laureates.json";
-import franceTopoData from "../data/france.json";
-
-// I don't need a main file!!!!
-
-console.log("countries", countries);
+import world from "../data/world.json";
+import france from "../data/france.json";
 console.log("laureates", laureates);
+console.log("world (GeoJSON)", world);
+console.log("France (TopoJSON)", france);
 
-drawWorldMap(laureates, countries);
-
-console.log("France topojson data", franceTopoData);
-drawFranceMap(laureates, franceTopoData);
-
+drawWorldMap(laureates, world);
+drawFranceMap(laureates, france);

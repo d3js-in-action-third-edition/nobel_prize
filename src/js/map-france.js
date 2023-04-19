@@ -1,36 +1,17 @@
-import * as topojson from "topojson";
+import * as topojson from "topojson-client";
 import { select } from "d3-selection";
 import { geoMercator, geoPath } from "d3-geo";
 import { max } from "d3-array";
 import { getCityRadius } from "./scales";
 
-export const drawFranceMap = (laureates, topoData) => {
-
-  // Filter laureates data
-  const franceLaureates = laureates.filter(laureate => laureate.birth_country === "France");
-  console.log("franceLaureates", franceLaureates);
-  const cities = [];
-  franceLaureates.forEach(laureate => {
-    if (cities.find(city => city.name === laureate.birth_city)) {
-      cities.find(city => city.name === laureate.birth_city).laureates.push(laureate);
-    } else {
-      cities.push({
-        name: laureate.birth_city,
-        latitude: laureate.birt_city_latitude,
-        longitude: laureate.birt_city_longitude,
-        laureates: [laureate]
-      });
-    }
-  });
-  console.log("France cities", cities);
-  const maxLaureatesPerCity = max(cities, d => d.laureates.length);
+export const drawFranceMap = (laureates, france) => {
 
   // Convert TopoJSON to GeoJSON
-  let departments = topojson.feature(topoData, topoData.objects.FRA_adm2).features;
+  let departments = topojson.feature(france, france.objects.FRA_adm2).features;
   console.log(departments)
 
   // Extract borders
-  let borders = topojson.mesh(topoData, topoData.objects.FRA_adm2);
+  let borders = topojson.mesh(france, france.objects.FRA_adm2);
   console.log(borders);
 
   // Dimensions
@@ -51,6 +32,7 @@ export const drawFranceMap = (laureates, topoData) => {
     .append("svg")
       .attr("viewBox", `0 0 ${width} ${height}`);
 
+  // Append the departments paths
   svg
     .selectAll(".department")
     .data(departments)
@@ -59,6 +41,7 @@ export const drawFranceMap = (laureates, topoData) => {
       .attr("d", d => geoPathGenerator(d))
       .attr("fill", "#f8fcff");
 
+  // Append the borders path
   svg
     .append("path")
       .attr("class", "departments-borders")
@@ -66,6 +49,26 @@ export const drawFranceMap = (laureates, topoData) => {
       .attr("fill", "none")
       .attr("stroke", "#09131b")
       .attr("stroke-opacity", 0.4);
+
+  // Filter laureates data
+  const franceLaureates = laureates.filter(laureate => laureate.birth_country === "France");
+  console.log("franceLaureates", franceLaureates);
+
+  const cities = [];
+  franceLaureates.forEach(laureate => {
+    if (cities.find(city => city.name === laureate.birth_city)) {
+      cities.find(city => city.name === laureate.birth_city).laureates.push(laureate);
+    } else {
+      cities.push({
+        name: laureate.birth_city,
+        latitude: laureate.birt_city_latitude,
+        longitude: laureate.birt_city_longitude,
+        laureates: [laureate]
+      });
+    }
+  });
+  console.log("France cities", cities);
+  const maxLaureatesPerCity = max(cities, d => d.laureates.length);
 
   // Append city circles
   svg

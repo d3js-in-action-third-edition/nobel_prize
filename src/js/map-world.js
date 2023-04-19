@@ -1,5 +1,5 @@
 import { select, selectAll } from "d3-selection";
-import { geoEqualEarth, geoPath, geoGraticule, geoMercator, geoConicEqualArea } from "d3-geo";
+import { geoPath, geoEqualEarth, geoGraticule } from "d3-geo";
 import { transition } from "d3-transition";
 import { max, min } from "d3-array";
 import { zoom, zoomIdentity } from "d3-zoom";
@@ -10,23 +10,24 @@ import { brushX } from "d3-brush";
 import { countryColorScale, getCityRadius } from "./scales";
 import { drawLegend } from "./legend";
 
-export const drawWorldMap = (laureates, countries) => {
+export const drawWorldMap = (laureates, world) => {
 
   // Perform calculations
-  const birthCities = [];
-  laureates.forEach(laureate => {
-    if (laureate.birth_country !== "" && laureate.birth_city !== "") {
-      const country =  countries.features.find(f => f.properties.name === laureate.birth_country);
-      if (country.properties.laureates) {
-        country.properties.laureates.push(laureate);
-      } else {
-        country.properties["laureates"] = [laureate];
-      }
+  world.features.forEach(country => {
+    const props = country.properties;
+    props.laureates = laureates.filter(laureate => laureate.birth_country === props.name);
+  });
 
-      if (birthCities.find(city => city.city === laureate.birth_city) && birthCities.find(city => city.country === laureate.birth_country)) {
-        birthCities.find(city => city.city === laureate.birth_city).laureates.push(laureate);
+  const cities = [];
+  laureates.forEach(laureate => {
+    if (laureate.birth_country !== "" && laureate.birth_city !== "") {
+
+      const relatedCity = cities.find(city => city.city === laureate.birth_city) && cities.find(city => city.country === laureate.birth_country);
+      
+      if (relatedCity) {
+        relatedCity.laureates.push(laureate);
       } else {
-        birthCities.push({
+        cities.push({
           city: laureate.birth_city,
           country: laureate.birth_country,
           latitude: laureate.birt_city_latitude,
@@ -34,81 +35,57 @@ export const drawWorldMap = (laureates, countries) => {
           laureates: [laureate]
         });
       }
-    }
 
+    }
   });
-  console.log("birthCities", birthCities);
-  const maxLaureatesPerCity = max(birthCities, d => d.laureates.length);
-  drawLegend(maxLaureatesPerCity);
 
   // Dimensions
   const width = 1230;
   const height = 620;
 
-  const minYear = min(laureates, d => d.year);
-  const maxYear = max(laureates, d => d.year);
+  // Declare state variables
+  let isCountryMap = true;
+  const minYear = min(laureates, d => d.year);
+  const maxYear = max(laureates, d => d.year);
   let brushMin = minYear;
   let brushMax = maxYear;
 
-  // Append SVG container
+  // Append the SVG container
   const svg = select("#map")
     .append("svg")
       .attr("viewBox", `0 0 ${width} ${height}`);
 
-  // Define projection
+  // Define the map projection
   const projection = geoEqualEarth()
-  // const projection = geoConicEqualArea()
-  //   .scale(width / 7)
-    .scale(width / 5.5)
-    .translate([width/2, height/2]);
+    .translate([width/2, height/2])
+    .scale(220);
 
   // Initialize the path generator
   const geoPathGenerator = geoPath()
     .projection(projection);
 
-  // Append graticules
-  const graticule = geoGraticule();
+  // Define the graticule generator
+  const graticuleGenerator = geoGraticule();
 
+  // Append the graticules
   const graticules = svg
     .append("g")
       .attr("fill", "transparent")
       .attr("stroke", "#09131b")
-      .attr("stroke-opacity", 0.2)
+      .attr("stroke-opacity", 0.2);
   graticules
     .append("path")
-    .datum(graticule)
-      .attr("class", "graticule line")
+    .datum(graticuleGenerator)
       .attr("d", geoPathGenerator);
   graticules
     .append("path")
-    .datum(graticule.outline)
-      .attr("class", "graticule outline")
+    .datum(graticuleGenerator.outline)
       .attr("d", geoPathGenerator);
 
-  // Append country fills
-  svg
-    .selectAll(".path-mercator")
-    .data(countries.features)
-    .join("path")
-      .attr("class", "countries path-mercator")
-      .attr("d", geoPathGenerator)
-      .attr("fill", "#f8fcff")
-      .attr("stroke", "#09131b")
-      .attr("stroke-opacity", 0.4);
-  
-  const showCountryTooltip = (d) => {
+  // Handle the tooltip
+  const showTooltip = (text) => {
     select("#map-tooltip")
-      .text(d.laureates
-        ? `${d.name}, ${d.laureates.length} laureate${d.laureates.length > 1 ? "s" : ""}`
-        : `${d.name}, 0 laureate`
-      )
-      .transition()
-      .style("opacity", 1);
-  };
-
-  const showCityTooltip = (d) => {
-    select("#map-tooltip")
-      .text(`${d.city}, ${d.laureates.length} laureate${d.laureates.length > 1 ? "s" : ""}`)
+      .text(text)
       .transition()
       .style("opacity", 1);
   };
@@ -119,43 +96,59 @@ export const drawWorldMap = (laureates, countries) => {
       .style("opacity", 0);
   };
 
+  // Append the country paths
+  svg
+    .selectAll(".country-path")
+    .data(world.features)
+    .join("path")
+      .attr("class", "country-path")
+      .attr("d", geoPathGenerator)
+      .attr("stroke", "#09131b")
+      .attr("stroke-opacity", 0.4);
+
   const updateCountryFills = () => {
-    const selectedData = JSON.parse(JSON.stringify(countries.features));
-      selectedData.forEach(d => {
-        if (d.properties.laureates) {
-          d.properties.laureates = d.properties.laureates.filter(l => l.year >= brushMin && l.year <= brushMax);
-        }
-      });
+    const selectedData = JSON.parse(JSON.stringify(world.features));
+    selectedData.forEach(d => {
+      if (d.properties.laureates) {
+        d.properties.laureates = d.properties.laureates.filter(l => l.year >= brushMin && l.year <= brushMax);
+      }
+    });
 
-      selectAll(".path-mercator")
-        .data(selectedData)
-        .on("mouseenter", (e, d) => showCountryTooltip(d.properties))
-        .on("mouseleave", hideTooltip)
-        .transition()
-        .attr("fill", d =>  d.properties.laureates && d.properties.laureates.length > 0
-          ? countryColorScale(d.properties.laureates.length)
-          : "#f8fcff");
+    selectAll(".country-path")
+      .data(selectedData)
+      .on("mouseenter", (e, d) => {
+        const p = d.properties;
+        const lastWord = p.laureates.length > 1 ? "laureates" : "laureate";
+        const text = `${p.name}, ${p.laureates.length} ${lastWord}`;
+        showTooltip(text);
+      })
+      .on("mouseleave", hideTooltip)
+      .transition()
+      .attr("fill", d => d.properties.laureates.length > 0 
+        ? countryColorScale(d.properties.laureates.length) 
+        : "#f8fcff");
   };
 
+  const maxLaureatesPerCity = max(cities, d => d.laureates.length);
   const updateCityCircles = () => {
-    const selectedData = JSON.parse(JSON.stringify(birthCities));
-      selectedData.forEach(city => {
-        city.laureates = city.laureates.filter(l => l.year >= brushMin && l.year <= brushMax);
-      });
+    const selectedData = JSON.parse(JSON.stringify(cities));
+    selectedData.forEach(city => {
+      city.laureates = city.laureates.filter(l => l.year >= brushMin && l.year <= brushMax);
+    });
 
-      selectAll(".circle-city")
-        .data(selectedData)
-        .on("mouseenter", (e, d) => showCityTooltip(d))
-        .on("mouseleave", hideTooltip)
-        .transition()
-        .attr("r", d => getCityRadius(d.laureates.length, maxLaureatesPerCity));
+    selectAll(".circle-city")
+      .data(selectedData)
+      .on("mouseenter", (e, d) => {
+        const lastWord = d.laureates.length > 1 ? "laureates" : "laureate";
+        const text = `${d.city}, ${d.laureates.length} ${lastWord}`;
+        showTooltip(text);
+      })
+      .on("mouseleave", hideTooltip)
+      .transition()
+      .attr("r", d => getCityRadius(d.laureates.length, maxLaureatesPerCity));
   };
 
-  let isCountryMap = true;
-
-  // Display laureates' countries
   const displayCountries = () => {
-
     isCountryMap = true;
 
     // Remove city circles
@@ -172,15 +165,14 @@ export const drawWorldMap = (laureates, countries) => {
       .style("display", "none");
     select(".legend-countries")
       .style("display", "flex");
-
   };
-
+  
   const displayCities = () => {
 
     isCountryMap = false;
 
     // Remove country styles and events
-    selectAll(".path-mercator")
+    selectAll(".country-path")
       .on("mouseenter", null)
       .on("leave", null)
       .transition()
@@ -189,7 +181,7 @@ export const drawWorldMap = (laureates, countries) => {
     // Show birth cities
     svg
       .selectAll(".circle-city")
-      .data(birthCities)
+      .data(cities)
       .join("circle")
         .attr("class", "circle-city")
         .attr("cx", d => projection([d.longitude, d.latitude])[0])
@@ -208,7 +200,9 @@ export const drawWorldMap = (laureates, countries) => {
     
   };
 
-  // Listen to radio buttons selection
+  drawLegend(maxLaureatesPerCity);
+  
+  // Listen to radio buttons selection 
   selectAll("input#countries, input#cities")
     .on("click", e => {
       if (e.target.id === "countries") {
@@ -227,14 +221,18 @@ export const drawWorldMap = (laureates, countries) => {
     .translateExtent([[-width/2, -height/2], [3*width/2, 3*height/2]])
     .on("zoom", (e) => {
       console.log(e);
-      svg
-        .attr("transform", e.transform);
+      svg.attr("transform", e.transform);
 
       if (select("#map-reset").classed("hidden")) {
         select("#map-reset")
           .classed("hidden", false);
       }
+      if (e.transform.k === 1 && e.transform.x === 0 && e.transform.y === 0) {
+        select("#map-reset")
+          .classed("hidden", true);
+      }
     });
+
   select(".map-container")
     .call(zoomHandler);
 
@@ -246,24 +244,23 @@ export const drawWorldMap = (laureates, countries) => {
         .call(zoomHandler.transform, zoomIdentity);
     });
 
-
-  // Add years selector
-  const yearsWidth = 1000;
-  const yearsHeight = 80;
-  const yearsMargin= { top: 0, right: 10, bottom: 0, left: 0 };
-  const yearsInnerWidth = yearsWidth - yearsMargin.right - yearsMargin.left;
+  // Add the timeline selector
+  const tlWidth = 1000;
+  const tlHeight = 80;
+  const tlMargin= { top: 0, right: 10, bottom: 0, left: 0 };
+  const tlInnerWidth = tlWidth - tlMargin.right - tlMargin.left;
 
   const xScale = scaleLinear()
     .domain([minYear, maxYear])
-    .range([0, yearsInnerWidth]);
+    .range([0, tlInnerWidth]);
 
   const yearsSelector = select("#years-selector")
     .append("svg")
-      .attr("viewBox", `0 0 ${yearsWidth} ${yearsHeight}`);
+      .attr("viewBox", `0 0 ${tlWidth} ${tlHeight}`);
 
   const xAxisGenerator = axisBottom(xScale)
     .tickFormat(format(""))
-    .tickSizeOuter(0);;
+    .tickSizeOuter(0);
   yearsSelector
     .append("g")
       .attr("class", "axis-x")
@@ -284,11 +281,12 @@ export const drawWorldMap = (laureates, countries) => {
   };
 
   const brushHandler = brushX() // Always capture the full height with the brush
-    .extent([[0, 0], [yearsInnerWidth, yearsHeight]]) // Initialize the brush area
+    .extent([[0, 0], [tlInnerWidth, tlHeight]]) // Set the brushable area
     .on("brush", handleBrush);
+
   yearsSelector
     .call(brushHandler)
     .call(brushHandler.move, [xScale(minYear), xScale(maxYear)]); // Initial brushed zone
-  // Note that can also pan and resize area!
+  // Note that can also pan and resize the brushable area!
 
 };
